@@ -1,0 +1,269 @@
+/*---Start:: Footer---*/ 
+.hni-footer {
+    .hni-footer__newsletter,
+    .hni-footer__newsletter_scd {
+        h1 {
+            color: $white;
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .hni-fn__email {
+            .input-group {
+                background-color: $white;
+                align-items: center;
+                @include border-radius(35px);
+                align-items: center;
+                max-width: 650px;
+                width: 100%;
+                margin-left: auto;
+            }
+            .form-control {
+                color: $black500;
+                font-size: 16px;
+                border-top-left-radius: 35px;
+                border-bottom-left-radius: 35px;
+                border: none;
+                height: 70px;
+                padding: 10px 25px;
+                &:focus,
+                &:focus-within {
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            .btn {
+                background-color: $black700;
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 10px;
+                @include border-radius(25px);
+                padding: 12px 45px;
+            }
+        }
+    }
+    // footer newsletter -- homepage 1
+    .hni-footer__newsletter {
+        background-color: $green700;
+        padding: 90px 0;
+    }
+    // footer newsletter -- homepage 2
+    .hni-footer__newsletter_scd {
+        background-color: $green300;
+        padding: 100px 0;
+        h1 {
+            color: $black700;
+            margin-bottom: 40px;
+        }
+        .container {
+            position: relative;
+        }
+        .hni-fn__left {
+            max-width: 550px;
+        }
+        .hni-fn__email .btn {
+            background-color: $green700;
+        }
+        .hni-fn__right {
+            position: absolute;
+            top: -100px;
+            right: 0;
+            img {
+                max-width: 526px;
+                width: 100%;
+            }
+        }
+    }
+    .hni-footer__main {
+        padding: 90px 0;
+        h5 {
+            color: $green700;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 1.6em;
+        }
+        p {
+            font-size: 14px;
+            color: $black700;
+            margin-bottom: 10px;
+        }
+        .row:first-child {
+            margin-bottom: 40px;
+        }
+        .hni-footer__sosmed {
+            ul {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                li {
+                    background-color: $black200;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    width: 40px;
+                    @include border-radius(50%);
+                    margin: 0 5px;
+                    a {
+                        font-size: 18px;
+                        color: $green700;
+                        display: block;
+                        svg {
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .hbi-crm__item {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            >div {
+                width: 16px;
+                margin-right: 5px;
+            }
+        }
+        .hbi-fm__crm {
+            li {
+                float: left;
+                width: 50%;
+                margin-bottom: 5px;
+            }
+        }
+        .hbi-fm__menus {
+            li {
+                margin-top: 8px;
+                a {
+                    display: block;
+                    color: $black700;
+                    line-height: 1.5em;
+                    &:hover {
+                        color: $green700;
+                    }
+                }
+            }
+        }
+    }
+    .hni-footer__cr {
+        padding: 1rem 0;
+        background-color: $green700;
+        color: $white;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media (max-width: 1199px) {
+    .hni-footer {
+        .hni-footer__newsletter_scd {
+            .hni-fn__right {
+                top: -52px;
+                img {
+                    max-width: 430px;
+                }
+            }
+            .hni-fn__left {
+                max-width: 475px;
+            }
+        }
+        .hni-footer__main {
+            .hbi-fm__crm li {
+                float: none;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .hni-footer .hni-footer__newsletter_scd {
+        .hni-fn__right {
+            top: 0;
+            img {
+                max-width: 285px;
+            }
+        }
+        .hni-fn__left {
+            max-width: 375px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .hni-footer {
+        .hni-footer__main {
+            .hni-address__mbl {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-footer {
+        .hni-footer__newsletter,
+        .hni-footer__newsletter_scd,
+        .hni-footer__main {
+            padding: 40px 0;
+        }
+        .hni-logo {
+            margin-bottom: 40px;
+        }
+        .hni-footer__newsletter,
+        .hni-footer__newsletter_scd {
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .hni-fn__email {
+                .input-group {
+                    display: block;
+                    background-color: transparent;
+                    border-radius: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    margin-left: 0;
+                    text-align: center;
+                    .form-control {
+                        width: 100%;
+                        @include border-radius(35px);
+                    }
+                }
+                .btn {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .hni-footer__newsletter_scd {
+            margin-top: 130px;
+            .hni-fn__right {
+                position: relative;
+                margin: 0 auto;
+                display: table;
+                margin-top: -130px;
+            }
+            .hni-fn__left {
+                max-width: 100%;
+            }
+        }
+        .hni-footer__main {
+            .hni-address__dsk {
+                display: none;
+            }
+            .hni-address__mbl {
+                li {
+                    margin-bottom: 10px;
+                    h5, p {
+                        margin-bottom: 0;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/*---End:: Footer---*/ 
