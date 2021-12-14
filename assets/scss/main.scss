@@ -29,15 +29,24 @@ a {
 @import 'button';
 @import 'navbar';
 @import 'footer';
+@import 'sidebar';
 
 /*---MAIN CONTENT---*/ 
+.hni-content {
+    padding: 40px 0;
+}
 // top main
 .hni-breadcrumb {
     display: block;
     color: $black500;
     font-size: 13px;
     text-align: center;
+    &:hover {
+        color: $green700;
+    }
 }
 @import 'mainHeader';
 @import 'mainCategory';
 @import 'product';
+@import 'homepageDiscount';
+@import 'payment';

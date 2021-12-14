@@ -4,8 +4,13 @@
     position: relative;
     color: $white;
     padding-bottom: 50px;
+    .navbar {
+        padding: 0;
+        display: block;
+    }
     .hni-notes {
         display: flex;
+        padding: 8px 0;
         svg {
             display: inline-block;
             margin-right: 5px;
@@ -14,35 +19,207 @@
     }
     .hni-navbar {
         &__list {
+            li {
+                .navbar-toggler {
+                    display: none;
+                }
+                .dropdown-toggle {
+                    &::after {
+                        display: none;
+                    }
+                }
+                >.nav-link {
+                    padding: 0;
+                }
+                &.dropdown {
+                    .svg-inline--fa {
+                        font-size: 16px;
+                        margin-left: 5px;
+                    }
+                }
+                a {
+                    display: block;
+                    color: $white;
+                    font-weight: 700;
+                    padding: 1rem 20px;
+                    &:hover {
+                        color: $black700;
+                    }
+                }
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+                }
+                .dropdown-item {
+                    color: $black700;
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        color: $green700;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        color: $white;
+    }
+    .hni-navbar__mbl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+        .nav-button__mbl {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            margin: 0 -20px;
-            li a {
-                display: block;
-                color: $white;
-                font-weight: 700;
-                padding: 1rem 20px;
-                &:hover {
-                    color: #f2f2f2;
+            svg {
+                font-size: 16px;
+                vertical-align: middle;
+                color: $green700;
+            }
+            .hni-nav__button {
+                @include border-radius(20px);
+                background-color: $white;
+                display: table;
+                margin: 0 10px;
+                text-align: center;
+                a {
+                    display: inline-block;
+                    padding: 7px;
                 }
+                .hb-wishlist {
+                    padding-left: 14px;
+                    border-right: 1px solid $green700
+                }
+                .hb-cart {
+                    padding-right: 14px;
+                }
+            }
+            .hb-login {
+                width: 35px;
+                height: 35px;
+                background-color: $white;
+                @include border-radius(50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
 }
-@media (max-width: 1199px) and (min-width: 768px) {
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1080;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color: $green700;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform .3s ease-in-out;
+}
+.offcanvas {
+    will-change: transform, box-shadow;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),box-shadow 0.3s ease;
+    box-shadow: none;
+    visibility: visible !important;
+}
+.offcanvas:not(.offcanvas-end):not(.offcanvas-bottom) {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-right: 0 solid rgba(0,0,0,0);
+    transform: translateX(-100%);
+}
+.offcanvas[data-offcanvas-show],
+.offcanvas.show {
+    transform: none !important;
+    // opacity: 1;
+}
+.hni-navbar.show {
+    .hni-navbar__list {
+        padding-top: 40px;
+        .navbar-toggler {
+            display: table;
+            width: 40px;
+            padding: 0;
+            height: 40px;
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+    }
+}
+@media (min-width: 992px) {
     .hni-top__navbar {
-        .hni-navbar {
-            &__list {
-                margin: 0 -.75rem;
-                li a {
-                    padding: 1rem .75rem;
+        .hni-notes {
+            padding-top: 0;
+        }
+        .navbar {
+            display: flex;
+        }
+        .hni-navbar__mbl {
+            display: none;
+        }
+    }
+    .offcanvas-collapse {
+        display: block;
+        position: static;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+        background-color: transparent;
+    }
+    .navbar-expand-lg .navbar-nav {
+        justify-content: flex-end;
+        .nav-item { 
+            .dropdown-menu {
+                display: none; 
+                margin-top: 0;
+                padding: 0;
+                background-color: $white;
+            }
+        }
+        .nav-item:hover > .dropdown-menu,
+        .nav-item .dropdown-menu > .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+            width: 250px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .hni-top__navbar {
+        &::before {
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 37px;
+            height: 1px;
+            content: "";
+        }
+        .navbar-nav {
+            li {
+                .dropdown-menu {
+                    margin-left: 15px;
+                    padding: 0;
+                    margin-top: -10px;
+                    .dropdown-item {
+                        color: $white
+                    }
                 }
             }
         }
     }
 }
-
 // hni top header
 .hni-logo {
     display: block;
@@ -200,6 +377,10 @@
                 display: block;
                 max-height: 40px;
             }
+        }
+        .hni-header__button,
+        .hni-header__login {
+            display: none;
         }
     }
 }

@@ -1,9 +1,12 @@
 /*---Start:: Main Content - Top Header---*/ 
+.hni-space-content {
+    padding: 0 30px;
+}
 .hni-top__main {
     background-image: url(../img/bg-header.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 90px 0;
+    padding: 90px 0 60px 0;
     h1 {
         font-size: 72px;
         font-weight: 900;
@@ -23,15 +26,11 @@
     }
 }
 @media (min-width: 1200px) {
-    .hni-top__main {
-        .container {
-            padding: 0 40px;
-        }
+    .hni-space-content {
+        padding: 0 60px;
     }
-}
-@media (max-width: 1024px) {
     .hni-top__main {
-        padding-bottom: 50px;
+        padding: 90px 0 100px 0;
     }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -42,11 +41,10 @@
     }
 }
 @media (max-width: 767px) {
+    .hni-space-content {
+        padding: 0;
+    }
     .hni-top__main {
-        padding: 55px 0 30px 0;
-        h1 {
-            font-size: 32px;
-        }
         p {
             font-size: 14px;
             margin: 10px 0;
@@ -56,6 +54,68 @@
             display: table;
             margin: 0 auto;
             margin-bottom: 20px;
+        }
+    }
+}
+/*Header Section*/ 
+.hni-header__section {
+    background-image: url(../img/bg-topheader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0 60px 0;
+    position: relative;
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        z-index: 0;
+        background-color: rgba(29, 62, 0, 0.8);
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .list-breadcrumb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        li {
+            font-size: 16px;
+            color: $white;
+            a {
+                padding: 0 5px;
+                display: block;
+                color: $white;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .hni-top__main,
+    .hni-header__section {
+        padding: 50px 0;
+    }
+}
+@media (max-width: 767px) {
+    .hni-top__main,
+    .hni-header__section {
+        padding: 60px 0 30px 0;
+        h1 {
+            font-size: 32px;
+        }
+    }
+    .hni-header__section {
+        .list-breadcrumb {
+            li {
+                font-size: 14px;
+            }
         }
     }
 }

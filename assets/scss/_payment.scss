@@ -1,0 +1,26 @@
+/*---Start:: Main Content - Payment Confirmation---*/ 
+.hni-payment {
+    border: 1px solid #dedede;
+    @include border-radius(8px);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    padding: 30px;
+    margin: 90px auto;
+    max-width: 100%;
+    width: 660px;
+    h5 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin: 0 auto;
+        display: table;
+    }
+}
+@media (max-width: 991px) {
+    .hni-payment {
+        padding: 20px;
+        margin: 40px 0;
+    }
+}
+/*---End:: Main Content - Payment Confirmation---*/ 

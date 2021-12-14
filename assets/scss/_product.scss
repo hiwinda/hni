@@ -1,24 +1,74 @@
+/*---Start:: Main Content - Product Homepage---*/ 
+.hni-product__nav {
+    ul {
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: $black700;
+                padding: 5px 20px;
+            }
+            &.active a,
+            a:hover,
+            a:focus {
+                color: $green700;
+            }
+        }   
+    }
+}
+@media (max-width: 767px) {
+    .hni-product__nav {
+        ul {
+            margin-bottom: 15px;
+            li a {
+                font-size: 14px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
 .hni-product {
-    margin-bottom: 90px;
+    padding: 60px 0;
     &__row {
         margin: 0 -10px;
+        display: flex;
+        flex-wrap: wrap;
         .hni-product__col {
             width: 20%;
-            float: left;
+            flex: 0 0 auto;
             padding: 0 10px;
             margin-bottom: 20px;
         }
+    }
+    .btn-product__more {
+        display: table;
+        margin: 20px auto 0 auto;
     }
 }
 .hni-product__item {
     border: 1px solid $black200;
     @include border-radius(8px);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100%;
+    &:hover {
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    }
     .product-line {
         width: 100%;
     }
     .product-img {
         position: relative;
         padding: 20px;
+        >a {
+            display: block;
+        }
         img {
             width: 100%;
         }
@@ -41,13 +91,23 @@
     }
     .product-desc {
         text-align: center;
-        padding: 0 15px 30px 15px;
+        padding: 0 10px 30px 10px;
     }
     h5 {
         font-size: 18px;
         font-weight: 700;
         margin: 3px 0;
         line-height: 1.5em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        a {
+            display: block;
+            color: $black800;
+            &:hover {
+                color: $green700;
+            }
+        }
     }
     .price {
         margin-bottom: 15px;
@@ -67,6 +127,11 @@
         line-height: 1.2em;
     }
 }
+@media (min-width: 1200px) {
+    .hni-product {
+        padding: 90px 0;
+    }
+}
 @media (max-width: 1199px) and (min-width: 992px) {
     .hni-product {
         &__row {
@@ -76,8 +141,9 @@
         }
     }
 }
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) {
     .hni-product {
+        padding: 40px 0;
         &__row {
             .hni-product__col {
                 width: 33.33%;
@@ -109,6 +175,9 @@
             }
             .price span {
                 font-size: 12px;
+                &.price-disc {
+                    display: none;
+                }
             }
             .btn {
                 font-size: 13px;
@@ -117,3 +186,4 @@
         }
     }
 }
+/*---End:: Main Content - Product Homepage---*/ 

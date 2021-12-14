@@ -139,6 +139,14 @@
         }
     }
 }
+@media (max-width: 991px) {
+    .hni-footer {
+        .hni-footer__newsletter,
+        .hni-footer__main {
+            padding: 40px 0;
+        }
+    }
+}
 @media (min-width: 768px) {
     .hni-footer {
         .hni-footer__main {
@@ -150,10 +158,6 @@
 }
 @media (max-width: 767px) {
     .hni-footer {
-        .hni-footer__newsletter,
-        .hni-footer__main {
-            padding: 40px 0;
-        }
         .hni-logo {
             margin-bottom: 40px;
         }
