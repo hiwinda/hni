@@ -1,0 +1,62 @@
+/*---Start:: Main Content - Top Header---*/ 
+.hni-top__main {
+    background-image: url(../img/bg-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+    h1 {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1em;
+        margin-bottom: 0;
+        span {
+            display: block;
+        }
+    }
+    p {
+        color: $black700;
+        font-size: 18px;
+        margin: 30px 0;
+    }
+    .hni-header__img {
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .hni-top__main {
+        .container {
+            padding: 0 40px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .hni-top__main {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .hni-top__main {
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-top__main {
+        padding: 55px 0 30px 0;
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .hni-header__img {
+            max-width: 90%;
+            display: table;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+/*---End:: Main Content - Top Header---*/ 

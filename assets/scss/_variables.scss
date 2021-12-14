@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$nunito: 'Nunito', sans-serif;
+
+// colors
+$green700: #5E982A;
+$green600: #748B5F;
+$green400: rgba(226, 239, 215, 0.3);
+$green300: #E2EFD7;
+
+$blue700: #0B5085;
+
+$red700: #D02828;
+
+$black800: #000000;
+$black700: #333333;
+$black500: #777777;
+$black200: #EFEFEF;
+$black100: #F6F6F6;
+
+$white: #ffffff;
+
+.text-blue700 {
+    color: $blue700;
+}
+.text-green700 {
+    color: $green700;
+}
