@@ -1,0 +1,119 @@
+.hni-product {
+    margin-bottom: 90px;
+    &__row {
+        margin: 0 -10px;
+        .hni-product__col {
+            width: 20%;
+            float: left;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.hni-product__item {
+    border: 1px solid $black200;
+    @include border-radius(8px);
+    .product-line {
+        width: 100%;
+    }
+    .product-img {
+        position: relative;
+        padding: 20px;
+        img {
+            width: 100%;
+        }
+        .product-band {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: $orange500;
+            color: #3C0000;
+            font-weight: 700;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            @include border-radius(50%);
+            text-transform: uppercase;
+        }
+    }
+    .product-desc {
+        text-align: center;
+        padding: 0 15px 30px 15px;
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 3px 0;
+        line-height: 1.5em;
+    }
+    .price {
+        margin-bottom: 15px;
+        span {
+            display: inline-block;
+            color: $green600;
+            font-size: 16px;
+            font-weight: 700;
+            &.price-disc {
+                text-decoration: line-through;
+                color: #AAAAAA;
+                margin-right: 5px;
+            }
+        }
+    }
+    .btn {
+        line-height: 1.2em;
+    }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+    .hni-product {
+        &__row {
+            .hni-product__col {
+                width: 25%;
+            }
+        }
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .hni-product {
+        &__row {
+            .hni-product__col {
+                width: 33.33%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-product {
+        &__row {
+            .hni-product__col {
+                width: 50%;
+            }
+        }
+        &__item {
+            .product-img {
+                .product-band {
+                    font-size: 7px;
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            .hni-breadcrumb {
+                display: none;
+            }
+            h5 {
+                font-size: 14px;
+                margin-top: 0;
+            }
+            .price span {
+                font-size: 12px;
+            }
+            .btn {
+                font-size: 13px;
+                padding: 6px 20px;
+            }
+        }
+    }
+}

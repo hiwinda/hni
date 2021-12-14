@@ -19,8 +19,8 @@ a {
 }
 *:focus,
 *:focus-within {
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
 }
 .container {
     position: relative;
@@ -40,3 +40,4 @@ a {
 }
 @import 'mainHeader';
 @import 'mainCategory';
+@import 'product';
