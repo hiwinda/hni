@@ -1,5 +1,84 @@
-/*---Start:: Main Content - Payment Confirmation---*/ 
+/*---Start:: Main Content - Payment---*/ 
 .hni-payment {
+    margin: 40px auto;
+    max-width: 950px;
+    &__sidebar {
+        @include border-radius(8px);
+        border: 1px solid #dedede;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        padding: 30px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(../img/payment-frame.png);
+            height: 21px;
+            width: 100%;
+        }
+        .hni-title h5 {
+            font-size: 18px;
+        }
+        .hni-ps__cart {
+            .ps-cart__item {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                color: $black700;
+                margin: 20px 0;
+                .psc-img {
+                    width: 60px;
+                    height: 60px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .psc-title {
+                    margin-left: 20px;
+                    margin-right: 15px;
+                    flex: 1%;
+                }
+            }
+        }
+        .hni-ps__address {
+            padding: 20px 0;
+            margin: 20px 0;
+            border-bottom: 1px solid #dedede;
+            border-top: 1px solid #dedede;
+            span {
+                font-size: 12px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            h5 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: normal;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 0;
+                color: $black500;
+                span {
+                    color: $black800;
+                    font-size: 16px;
+                    line-height: normal;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .hni-ps__total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+    }
+}
+.hni-payment__confirmation {
     border: 1px solid #dedede;
     @include border-radius(8px);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
@@ -16,11 +95,47 @@
         margin: 0 auto;
         display: table;
     }
-}
-@media (max-width: 991px) {
-    .hni-payment {
-        padding: 20px;
-        margin: 40px 0;
+    // custom file input
+    .form-file {
+        background-color: #FAFAFA;
+        @include border-radius(6px);
+        border: 1px solid #dedede;
+        position: relative;
+        padding: 60px 20px;
+        margin-bottom: 30px;
+        .custom-file-input {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            outline: none;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .drag-text {
+            text-align: center;
+            font-size: 14px;
+            color: #555555;
+            svg {
+                font-size: 36px;
+                display: table;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
-/*---End:: Main Content - Payment Confirmation---*/ 
+@media (max-width: 991px) {
+    .hni-payment__confirmation {
+        padding: 20px;
+        margin: 40px 0;
+        .form-file {
+            padding: 40px 15px;
+        }
+    }
+}
+/*---End:: Main Content - Payment---*/ 
