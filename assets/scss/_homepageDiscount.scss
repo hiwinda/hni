@@ -1,0 +1,44 @@
+/*---Start:: Main Content - Discount Homepage---*/ 
+.hni-banner__main {
+    position: relative;
+    padding: 60px 0;
+    &::before {
+        position: absolute;
+        background-color: #F4F4F4;
+        height: 200px;
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "";
+    }
+    .hni-banner__item {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .hni-banner__main {
+        padding: 90px 0;
+        &::before {
+            height: 300px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .hni-banner__main {
+        padding: 40px 0;
+        &::before {
+            height: 150px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-banner__main {
+        padding: 30px 0;
+        .hni-banner__item {
+            margin: 10px 0;
+        }
+    }
+}
+/*---End:: Main Content - Discount Homepage---*/ 

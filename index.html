@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,26 +17,70 @@
     <link href="assets/css/main.css" rel="stylesheet" />
     <!-- JS Main -->
 </head>
+
 <body>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-4">
-                    <span class="hni-notes">
-                        <span class="fas fa-caret-right"></span>
-                        Free shipping for all order with min Rp 100.000 transaction
-                    </span>
+            <div class="navbar-expand-lg navbar">
+                <div class="hni-notes">
+                    <span class="fas fa-caret-right"></span>
+                    Free shipping for all order with min Rp 100.000 transaction
                 </div>
-                <div class="col-lg-6 col-md-8">
-                    <div class="hni-navbar">
-                        <ul class="hni-navbar__list list-unstyled clearfix">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">CATEGORIES</a></li>
-                            <li><a href="#">BEST SELLER</a></li>
-                            <li><a href="#">DEAL OF THE WEEK</a></li>
-                        </ul>
+                <div class="hni-navbar__mbl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                        <span class="navbar-toggler-icon fas fa-bars"></span>
+                    </button>
+                    <div class="nav-button__mbl">
+                        <div class="hni-nav__button">
+                            <a href="#" class="hb-wishlist">
+                                <span class="fas fa-heart"></span>
+                            </a>
+                            <a href="#" class="hb-cart">
+                                <span class="fas fa-shopping-cart"></span>
+                            </a>
+                        </div>
+                        <a href="#" class="hb-login">
+                            <span class="fas fa-user"></span>
+                        </a>
                     </div>
+                </div>
+                <div class="hni-navbar offcanvas offcanvas-collapse" id="offcanvasWithBackdrop">
+                    <ul class="hni-navbar__list navbar-nav list-unstyled clearfix">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                            <span class="navbar-toggler-icon fas fa-times"></span>
+                        </button>
+                        <li class="nav-item">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <a href="#">
+                                    CATEGORIES
+                                    <span class="fas fa-caret-down"></span>
+                                </a>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="category.html" class="dropdown-item">Sub Menu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Sub Menu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Sub Menu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">BEST SELLER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">DEAL OF THE WEEK</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="hni-header">
@@ -51,7 +96,7 @@
                             <div class="hni-header__search">
                                 <form>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Cari produk disini"/>
+                                        <input type="text" class="form-control" placeholder="Cari produk disini" />
                                         <div class="input-group-append">
                                             <button class="btn"><span class="fas fa-search"></span></button>
                                         </div>
@@ -83,65 +128,70 @@
     </div>
     <!-- content -->
     <main class="main-content">
-        <div class="hni-top__main">
+        <section class="hni-top__main">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-7">
-                        <img src="assets/img/img-detergen.png" alt="img header" class="hni-header__img">
-                    </div>
-                    <div class="col-md-5 order-md-first">
-                        <h1>
-                            <span class="text-green700">Greenwash</span> 
-                            <span class="text-blue700">Detergen</span>
-                        </h1>
-                        <p>Dilengkapi Super High Concentrate, sehingga mampu menghasilkan hasil cucian yang bersih maksimal</p>
-                        <a href="#" class="btn btn-primary btn-pill">Shop Now</a>
+                <div class="hni-space-content">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <img src="assets/img/img-detergen.png" alt="img header" class="hni-header__img">
+                        </div>
+                        <div class="col-md-5 order-md-first">
+                            <h1>
+                                <span class="text-green700">Greenwash</span>
+                                <span class="text-blue700">Detergen</span>
+                            </h1>
+                            <p>Dilengkapi Super High Concentrate, sehingga mampu menghasilkan hasil cucian yang bersih
+                                maksimal</p>
+                            <a href="#" class="btn btn-primary btn-pill">Shop Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="container">
-            <div class="hni-category-feature">
-                <div class="hni-category">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="hni-category__item">
-                                <div class="hni-ci__desc">
-                                    <span class="hni-breadcrumb">HERBAL NEW</span>
-                                    <h5>NEW ARRIVAL HERBS PRODUCTS</h5>
-                                    <a href="#" class="btn btn-primary btn-pill">View Products</a>
-                                </div>
-                                <div class="img-abs">
-                                    <img src="assets/img/img-category1.png" alt="img category">
-                                </div>
+            <!-- category -->
+            <section class="hni-category">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="hni-category__item">
+                            <div class="hni-ci__desc">
+                                <span class="hni-breadcrumb">HERBAL NEW</span>
+                                <h5>NEW ARRIVAL HERBS PRODUCTS</h5>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill">View Products</a>
+                            <div class="img-abs">
+                                <img src="assets/img/img-category1.png" alt="img category">
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="hni-category__item">
-                                <div class="hni-ci__desc">
-                                    <span class="hni-breadcrumb">HEALTH FOOD NEW</span>
-                                    <h5>NEW HEALTH FOOD PRODUCTS</h5>
-                                    <a href="#" class="btn btn-primary btn-pill">View Products</a>
-                                </div>
-                                <div class="img-abs">
-                                    <img src="assets/img/img-category2.png" alt="img category">
-                                </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hni-category__item">
+                            <div class="hni-ci__desc">
+                                <span class="hni-breadcrumb">HEALTH FOOD NEW</span>
+                                <h5>NEW HEALTH FOOD PRODUCTS</h5>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill">View Products</a>
+                            <div class="img-abs">
+                                <img src="assets/img/img-category2.png" alt="img category">
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="hni-category__item">
-                                <div class="hni-ci__desc">
-                                    <span class="hni-breadcrumb">COSMETIC NEW</span>
-                                    <h5>NEW COSMETIC PRODUCTS</h5>
-                                    <a href="#" class="btn btn-primary btn-pill">View Products</a>
-                                </div>
-                                <div class="img-abs">
-                                    <img src="assets/img/img-category3.png" alt="img category">
-                                </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="hni-category__item">
+                            <div class="hni-ci__desc">
+                                <span class="hni-breadcrumb">COSMETIC NEW</span>
+                                <h5>NEW COSMETIC PRODUCTS</h5>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill">View Products</a>
+                            <div class="img-abs">
+                                <img src="assets/img/img-category3.png" alt="img category">
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- feature -->
+            <section class="hni-space-content">
                 <div class="hni-feature">
                     <div class="row">
                         <div class="col-6 col-lg-3">
@@ -190,175 +240,556 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- product -->
+            <section class="hni-space-content">
+                <div class="hni-product">
+                    <ul class="hni-product__nav nav" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab-nav-first" data-bs-toggle="pill"
+                                data-bs-target="#tab-content-first" type="button" role="tab" aria-controls="tab-content-first"
+                                aria-selected="true">New Arrival</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-nav-second" data-bs-toggle="pill"
+                                data-bs-target="#tab-content-second" type="button" role="tab" aria-controls="tab-content-second"
+                                aria-selected="false">Featured Products</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-nav-third" data-bs-toggle="pill"
+                                data-bs-target="#tab-content-third" type="button" role="tab" aria-controls="tab-content-third"
+                                aria-selected="false">Best Sellers</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="tab-content-first" role="tabpanel"
+                            aria-labelledby="tab-nav-first">
+                            <div class="hni-product__row clearfix">
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product1.png" alt="img"></a>
+                                            <div class="product-band">
+                                                New
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Etta Goat Milk</a></h5>
+                                            <div class="price">
+                                                <span class="price-disc">Rp 85.000</span>
+                                                <span>Rp 65.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product2.png" alt="img"><a href="#"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Magafit</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product3.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Centella Teh Sinergi</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product4.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Night Cream</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product5.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Madu Pahit</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product6.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Andrographis Centella</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product7.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Dates Syrup</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product8.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Deep Olive</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product9.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Hibis Pembalut</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product10.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Hibis Pantyliners</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill btn-product__more">MORE PRODUCT</a>
+                        </div>
+                        <div class="tab-pane fade" id="tab-content-second" role="tabpanel" aria-labelledby="tab-nav-second">
+                            <div class="hni-product__row clearfix">
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product1.png" alt="img"></a>
+                                            <div class="product-band">
+                                                New
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Etta Goat Milk</a></h5>
+                                            <div class="price">
+                                                <span class="price-disc">Rp 85.000</span>
+                                                <span>Rp 65.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product2.png" alt="img"><a href="#"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Magafit</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product3.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Centella Teh Sinergi</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product4.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Night Cream</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product5.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Madu Pahit</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill btn-product__more">MORE PRODUCT</a>
+                        </div>
+                        <div class="tab-pane fade" id="tab-content-third" role="tabpanel" aria-labelledby="tab-nav-third">
+                            <div class="hni-product__row clearfix">
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product4.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Night Cream</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product5.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Madu Pahit</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product6.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Herbs</a>
+                                            <h5><a href="#">Andrographis Centella</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product7.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Health Food</a>
+                                            <h5><a href="#">Dates Syrup</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hni-product__col">
+                                    <div class="hni-product__item">
+                                        <div class="product-img">
+                                            <a href="#"><img src="assets/img/img-product10.png" alt="img"></a>
+                                        </div>
+                                        <img src="assets/img/product-line.png" alt="line" class="product-line">
+                                        <div class="product-desc">
+                                            <a href="#" class="hni-breadcrumb">Cosmetic</a>
+                                            <h5><a href="#">Hibis Pantyliners</a></h5>
+                                            <div class="price">
+                                                <span>Rp 85.000</span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-pill btn-product__more">MORE PRODUCT</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <!-- main bottom -->
+        <section class="hni-banner__main">
+            <div class="container">
+                <div class="hni-space-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="hni-banner__item">
+                                <img src="assets/img/banner1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="hni-banner__item">
+                                <img src="assets/img/banner2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="hni-banner__item">
+                                <img src="assets/img/banner3.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- footer -->
     <footer class="hni-footer">
         <div class="hni-footer__newsletter">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-lg-5">
-                        <h1>Subscribe to our newsletter and get special offers</h1>
-                    </div>
-                    <div class="col-md-6 col-lg-7">
-                        <form class="hni-fn__email">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your Email"/>
-                                <div class="input-group-append">
-                                    <button class="btn">SUBSCRIBE</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hni-footer__newsletter_scd">
-            <div class="container">
-                <div class="hni-fn__right">
-                    <img src="assets/img/footer-newsletter.png" alt="">
-                </div>
-                <div class="hni-fn__left">
-                    <h1>Subscribe to our newsletter and get special offers</h1>
-                    <form class="hni-fn__email">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Your Email"/>
-                            <div class="input-group-append">
-                                <button class="btn">SUBSCRIBE</button>
-                            </div>
+                <div class="hni-space-content">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <h1>Subscribe to our newsletter and get special offers</h1>
                         </div>
-                    </form>
+                        <div class="col-md-6 col-lg-7">
+                            <form class="hni-fn__email">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Your Email" />
+                                    <div class="input-group-append">
+                                        <button class="btn">SUBSCRIBE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="hni-footer__main">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-6">
-                        <div>
-                            <a href="#" class="hni-logo">
-                                <img src="assets/img/logo.png" alt="logo-desktop" class="hni-logo__dsk">
-                            </a>
+                <div class="hni-space-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-6">
+                            <div>
+                                <a href="#" class="hni-logo">
+                                    <img src="assets/img/logo.png" alt="logo-desktop" class="hni-logo__dsk">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="hni-footer__sosmed">
-                            <ul class="list-unstyled clearfix justify-content-md-center">
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-facebook-f"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-instagram"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-telegram-plane"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fab fa-youtube"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <ul class="hni-address__dsk list-unstyled m-0">
-                            <li>
-                                <h5>Address</h5>
-                                <p>
-                                    Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23, Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
-                                </p>
-                            </li>
-                            <li>
-                                <h5>Telp</h5>
-                                <p>081201356-2026</p>
-                            </li>
-                        </ul>
-                        <ul class="hni-address__mbl list-unstyled m-0">
-                            <li>
-                                <h5>Head Office</h5>
-                                <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI Jakarta, Indonesia 13450</p>
-                            </li>
-                            <li>
-                                <h5>Leaders Office</h5>
-                                <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok Gede, Kota Bekasi, Jawa Barat 17412</p>
-                            </li>
-                            <li>
-                                <h5 class="d-inline-block">Telp:</h5>
-                                <p class="d-inline-block">021-8690-9600</p>
-                            </li>
-                            <li>
-                                <h5 class="d-inline-block">Fax:</h5>
-                                <p class="d-inline-block">021-8690-6645</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="d-md-table mx-md-auto my-3 my-md-0">
-                            <h5>CRM 24 Jam</h5>
-                            <p><b>Tlp: Senin-Jumat 08.00 - 17.00</b></p>
-                            <ul class="hbi-fm__crm list-unstyled clearfix">
-                                <li class="hbi-crm__item">
-                                    <div><span class="fas fa-phone-alt"></span></div>
-                                    <span>021-8690-9600</span>
-                                </li>
-                                <li class="hbi-crm__item">
-                                    <div><span class="fas fa-mobile-alt"></span></div>
-                                    <span>+62 857-7401-7000</span>
-                                </li>
-                                <li class="hbi-crm__item">
-                                    <div><span class="fas fa-mobile-alt"></span></div>
-                                    <span>+62 878-8641-6000</span>
-                                </li>
-                                <li class="hbi-crm__item">
-                                    <div><span class="fas fa-mobile-alt"></span></div>
-                                    <span>+62 822-9930-5000</span>
-                                </li>
-                            </ul>
-                            <p><b>Email & Telegram: 24 Jam</b></p>
-                            <div class="hbi-crm__item">
-                                <div><span class="fas fa-envelope"></span></div>
-                                <span>crm@hpaindonesia.net</span>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hni-footer__sosmed">
+                                <ul class="list-unstyled clearfix justify-content-md-center">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fab fa-instagram"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fab fa-telegram-plane"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fab fa-youtube"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="d-md-table mx-md-auto">
-                            <h5>Menu Lainnya</h5>
-                            <ul class="hbi-fm__menus list-unstyled clearfix">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="hni-address__dsk list-unstyled m-0">
                                 <li>
-                                    <a href="#">Kode Etik</a>
+                                    <h5>Address</h5>
+                                    <p>
+                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23,
+                                        Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
+                                    </p>
                                 </li>
                                 <li>
-                                    <a href="#">KHT Spesial</a>
-                                </li>
-                                <li>
-                                    <a href="#">Daftar Leader</a>
-                                </li>
-                                <li>
-                                    <a href="#">Perubahan Syarat EP</a>
-                                </li>
-                                <li>
-                                    <a href="#">Klaster Leader Club</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sitemap</a>
+                                    <h5>Telp</h5>
+                                    <p>081201356-2026</p>
                                 </li>
                             </ul>
+                            <ul class="hni-address__mbl list-unstyled m-0">
+                                <li>
+                                    <h5>Head Office</h5>
+                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI
+                                        Jakarta, Indonesia 13450</p>
+                                </li>
+                                <li>
+                                    <h5>Leaders Office</h5>
+                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok
+                                        Gede, Kota Bekasi, Jawa Barat 17412</p>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline-block">Telp:</h5>
+                                    <p class="d-inline-block">021-8690-9600</p>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline-block">Fax:</h5>
+                                    <p class="d-inline-block">021-8690-6645</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-md-table mx-md-auto my-3 my-md-0">
+                                <h5>CRM 24 Jam</h5>
+                                <p><b>Tlp: Senin-Jumat 08.00 - 17.00</b></p>
+                                <ul class="hbi-fm__crm list-unstyled clearfix">
+                                    <li class="hbi-crm__item">
+                                        <div><span class="fas fa-phone-alt"></span></div>
+                                        <span>021-8690-9600</span>
+                                    </li>
+                                    <li class="hbi-crm__item">
+                                        <div><span class="fas fa-mobile-alt"></span></div>
+                                        <span>+62 857-7401-7000</span>
+                                    </li>
+                                    <li class="hbi-crm__item">
+                                        <div><span class="fas fa-mobile-alt"></span></div>
+                                        <span>+62 878-8641-6000</span>
+                                    </li>
+                                    <li class="hbi-crm__item">
+                                        <div><span class="fas fa-mobile-alt"></span></div>
+                                        <span>+62 822-9930-5000</span>
+                                    </li>
+                                </ul>
+                                <p><b>Email & Telegram: 24 Jam</b></p>
+                                <div class="hbi-crm__item">
+                                    <div><span class="fas fa-envelope"></span></div>
+                                    <span>crm@hpaindonesia.net</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-md-table mx-md-auto">
+                                <h5>Menu Lainnya</h5>
+                                <ul class="hbi-fm__menus list-unstyled clearfix">
+                                    <li>
+                                        <a href="#">Kode Etik</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">KHT Spesial</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Daftar Leader</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Perubahan Syarat EP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Klaster Leader Club</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sitemap</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -371,4 +802,5 @@
         </div>
     </footer>
 </body>
+
 </html>

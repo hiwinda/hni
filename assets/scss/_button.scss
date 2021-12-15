@@ -3,7 +3,6 @@
     padding: 10px 25px;
     font-weight: 600;
     font-size: 16px;
-    line-height: normal;
     &.btn-pill {
         @include border-radius(30px);
     }
@@ -15,6 +14,15 @@
         &:focus {
             background-color: $white;
             color: $green700;
+        }
+    }
+    &.btn-outline-primary {
+        border: 1px solid $green700;
+        color: $green700;
+        &:hover,
+        &:focus {
+            background-color: $green700;
+            color: $white;
         }
     }
 }
