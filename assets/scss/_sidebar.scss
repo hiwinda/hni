@@ -2,6 +2,7 @@
 .hni-sidebar {
     .sidebar-banner {
         max-width: 100%;
+        margin-top: 40px;
     }
     .hni-sidebar__title {
         border-bottom: 1px solid #dedede;
@@ -23,6 +24,41 @@
                 background-color: $green700;
                 content: "";
             }
+        }
+    }
+    .form-check {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        .form-check-input {
+            width: 18px;
+            height: 18px;
+            float: none;
+            margin: 0;
+            border: 1px solid #dedede;
+            margin-right: 10px;
+            @include border-radius(4px);
+            &:checked {
+                background-color: $green700;
+                border-color: $green700;
+            }
+        }
+        .form-check-label {
+            margin: 0;
+            font-size: 16px;
+            color: $black700;
+            font-family: $nunito;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-sidebar {
+        .sidebar-banner {
+            width: 50%;
+            margin: 0 auto;
+            display: table;
+            margin-bottom: 40px;
         }
     }
 }

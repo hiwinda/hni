@@ -1,33 +1,40 @@
 /*---Start:: Main Content - Product Homepage---*/ 
 .hni-product__nav {
-    ul {
-        margin-bottom: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li {
-            a {
-                font-size: 20px;
-                font-weight: 700;
-                color: $black700;
-                padding: 5px 20px;
-            }
-            &.active a,
-            a:hover,
-            a:focus {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        button {
+            font-size: 20px;
+            font-weight: 700;
+            color: $black700;
+            padding: 0 20px;
+            line-height: normal;
+            background: transparent;
+            border: none;
+            &.active,
+            &:hover,
+            &:focus {
                 color: $green700;
             }
-        }   
-    }
+        }
+    }   
 }
 @media (max-width: 767px) {
     .hni-product__nav {
-        ul {
-            margin-bottom: 15px;
-            li a {
-                font-size: 14px;
-                padding: 5px 10px;
-            }
+        margin-bottom: 15px;
+        li button {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    }
+}
+@media (max-width: 359px) {
+    .hni-product__nav {
+        li button {
+            font-size: 12px;
+            padding: 5px 8px;
         }
     }
 }
@@ -47,6 +54,13 @@
     .btn-product__more {
         display: table;
         margin: 20px auto 0 auto;
+    }
+    &__wrapper {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        .row > div {
+            margin-bottom: 20px;
+        }
     }
 }
 .hni-product__item {
@@ -98,12 +112,12 @@
         font-weight: 700;
         margin: 3px 0;
         line-height: 1.5em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         a {
             display: block;
             color: $black800;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             &:hover {
                 color: $green700;
             }

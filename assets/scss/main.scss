@@ -45,8 +45,98 @@ a {
         color: $green700;
     }
 }
+.hni-shorting {
+    &__select {
+        display: flex;
+        align-items: center;
+        label {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $nunito;
+            color: $black700;
+        }
+        .form-select {
+            font-family: $nunito;
+            color: $black700;
+            width: 200px;
+            max-width: 100%;
+            padding: 7px 15px;
+            font-size: 16px;
+            border-color: #dedede;
+            @include border-radius(6px);
+            margin-left: 10px;
+        }
+    }
+    &__ic {
+        text-align: right;
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            color: #AAAAAA;
+            &:first-child {
+                margin-right: 10px;
+            }
+            &.active {
+                color: $green700;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .hni-shorting {
+        &__select {
+            label,
+            .form-select {
+                font-size: 14px;
+                margin: 0;
+            }
+            label {
+                width: 75px;
+            }
+        }
+        &__ic a {
+            font-size: 22px;
+            &:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+}
 @import 'mainHeader';
 @import 'mainCategory';
 @import 'product';
 @import 'homepageDiscount';
 @import 'payment';
+
+/*---PAGINATION---*/ 
+.hni-pagination {
+    display: table;
+    margin: 0 auto;
+    ul {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $green700;
+        padding: 15px 20px;
+        @include border-radius(35px);
+        li {
+            border-left: 1px solid #AAAAAA;
+            &:first-child {
+                border-left: none;
+            }
+            a {
+                color: #AAAAAA;
+                font-weight: 700;
+                display: block;
+                padding: 0 10px;
+                line-height: normal;
+            }
+            &.active a,
+            a:hover {
+                color: $green700;
+            }
+        }
+    }
+}
