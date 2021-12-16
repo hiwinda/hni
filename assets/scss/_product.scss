@@ -1,4 +1,4 @@
-/*---Start:: Main Content - Product Homepage---*/ 
+/*---Start:: Main Content - Product---*/ 
 .hni-product__nav {
     margin-bottom: 35px;
     display: flex;
@@ -240,4 +240,84 @@
     background-color: #F4F4F4;
     padding: 90px 0;
 }
-/*---End:: Main Content - Product Homepage---*/ 
+/*---SEARCH PRODUCT CARD---*/ 
+.hni-product__card {
+    margin: 40px 0;
+    .hni-pc__item {
+        @include border-radius(8px);
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+        border: 1px solid #DEDEDE;
+        background-color: $white;
+        padding: 20px;
+        display: flex;
+        margin: 20px 0;
+        .img-left {
+            width: 100px;
+            height: 100px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-line {
+            width: 47px;
+            margin: 0 10px;
+        }
+        .desc-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1%;
+            .hni-breadcrumb {
+                text-align: left;
+                display: table;
+                font-size: 14px;
+            }
+            h5 {
+                margin: 5px 0;
+                font-size: 24px;
+                line-height: 1em;
+                font-weight: 700;
+                a:hover {
+                    color: $green700;
+                }
+            }
+            .price {
+                font-size: 16px;
+                font-weight: 700;
+                color: $green600;
+                display: table;
+            }
+            .btn {
+                padding: 7px 25px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-product__card {
+        .hni-pc__item {
+            display: block;
+            .img-left {
+                width: 50%;
+                display: table;
+                margin: 0 auto;
+                height: auto;
+            }
+            .product-line {
+                display: none;
+            }
+            .desc-right {
+                display: block;
+                margin-top: 10px;
+                .btn {
+                    display: table;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+/*---End:: Main Content - Product---*/ 

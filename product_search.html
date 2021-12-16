@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <!-- JS Main -->
     <script src="assets/js/main.js"></script>
 </head>
+
 <body>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
@@ -95,7 +97,7 @@
                             <div class="hni-header__search">
                                 <form>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Cari produk disini"/>
+                                        <input type="text" class="form-control" placeholder="Cari produk disini" />
                                         <div class="input-group-append">
                                             <button class="btn"><span class="fas fa-search"></span></button>
                                         </div>
@@ -130,137 +132,182 @@
         <section class="hni-header__section">
             <div class="container">
                 <div class="hni-space-content">
-                    <h1>Payment</h1>
+                    <h1>Suplemen herbal</h1>
                     <ul class="list-breadcrumb list-unstyled clearfix">
                         <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>-</li>
-                        <li>
-                            <a href="#">Shopping Cart</a>
-                        </li>
-                        <li>-</li>
-                        <li>
-                            <a href="#">Payment</a>
+                            <span>4 products found</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
         <div class="container">
-            <!-- payment confirmation -->
+            <!-- product -->
             <section class="hni-space-content">
-                <div class="hni-payment">
+                <div class="hni-content">
                     <div class="row">
-                        <div class="col-md-5 col-lg-4">
-                            <div class="hni-payment__sidebar">
-                                <div class="hni-title">
-                                    <h5>Your Shopping Receipt</h5>
+                        <div class="col-lg-8">
+                            <div class="hni-shorting">
+                                <div class="hni-shorting__select">
+                                    <label for="shorting-product">Sort By:</label>
+                                    <select class="form-select" id="shorting-product" aria-label="Short By">
+                                        <option selected>Relevance</option>
+                                        <option value="1">Discount</option>
+                                        <option value="2">Popular</option>
+                                        <option value="3">New Product</option>
+                                    </select>
                                 </div>
-                                <div class="hni-ps__cart">
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product2.png" alt="">
+                                <div class="hni-product__card">
+                                    <div class="hni-pc__item">
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product9.png" alt="">
+                                        </a>
+                                        <img src="assets/img/product-line2.png" alt="line" class="product-line">
+                                        <div class="desc-right">
+                                            <div>
+                                                <a href="#" class="hni-breadcrumb">Herbs</a>
+                                                <h5><a href="#">Magafit</a></h5>
+                                                <span class="price">Rp 85.000</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-pill btn-outline-primary">Add to Cart</a>
+                                            </div>
                                         </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">2x</div>
                                     </div>
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product5.png" alt="">
+                                    <div class="hni-pc__item">
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product9.png" alt="">
+                                        </a>
+                                        <img src="assets/img/product-line2.png" alt="line" class="product-line">
+                                        <div class="desc-right">
+                                            <div>
+                                                <a href="#" class="hni-breadcrumb">Herbs</a>
+                                                <h5><a href="#">Magafit</a></h5>
+                                                <span class="price">Rp 85.000</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-pill btn-outline-primary">Add to Cart</a>
+                                            </div>
                                         </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">3x</div>
                                     </div>
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product1.png" alt="">
+                                    <div class="hni-pc__item">
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product9.png" alt="">
+                                        </a>
+                                        <img src="assets/img/product-line2.png" alt="line" class="product-line">
+                                        <div class="desc-right">
+                                            <div>
+                                                <a href="#" class="hni-breadcrumb">Herbs</a>
+                                                <h5><a href="#">Magafit</a></h5>
+                                                <span class="price">Rp 85.000</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-pill btn-outline-primary">Add to Cart</a>
+                                            </div>
                                         </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">2x</div>
                                     </div>
-                                </div>
-                                <div class="hni-ps__address">
-                                    <span>Jasa Pengiriman</span>
-                                    <h5>Gojek (Same Day)</h5>
-                                    <span>Tujuan</span>
-                                    <p>
-                                        <span>Rumah Ibu</span>
-                                        Jl. Pilar Baru no 12, Kedoya Selatan, Jakarta Barat
-                                    </p>
-                                </div>
-                                <div class="hni-ps__total">
-                                    <span>Total Pembayaran</span>
-                                    <span>Rp 450.000</span>
+                                    <div class="hni-pc__item">
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product9.png" alt="">
+                                        </a>
+                                        <img src="assets/img/product-line2.png" alt="line" class="product-line">
+                                        <div class="desc-right">
+                                            <div>
+                                                <a href="#" class="hni-breadcrumb">Herbs</a>
+                                                <h5><a href="#">Magafit</a></h5>
+                                                <span class="price">Rp 85.000</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-pill btn-outline-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hni-pc__item">
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product9.png" alt="">
+                                        </a>
+                                        <img src="assets/img/product-line2.png" alt="line" class="product-line">
+                                        <div class="desc-right">
+                                            <div>
+                                                <a href="#" class="hni-breadcrumb">Herbs</a>
+                                                <h5><a href="#">Magafit</a></h5>
+                                                <span class="price">Rp 85.000</span>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="btn btn-pill btn-outline-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="hni-pagination">
+                                <ul class="list-unstyled clearfix">
+                                    <li><a href="#">PREV</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">NEXT</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-lg-8">
-                            <div class="hni-payment__content">
+                        <div class="col-lg-4">
+                            <div class="hni-sidebar__right">
                                 <div class="hni-title">
-                                    <h5>Metode Pembayaran</h5>
+                                    <h5>Other Products</h5>
                                 </div>
-                                <div class="hni-payment__select_acc">
-                                    <label for="">Pilih Rekening</label>
-                                    <div class="hni-payment__account">
-                                        <select class="form-select" id="shorting-product" aria-label="Pilih Rekening">
-                                            <option selected>Rekening Pribadi</option>
-                                            <option value="1">Rekening Pribadi 2</option>
-                                            <option value="2">Rekening Pribadi 3</option>
-                                        </select>
-                                        <a href="#" class="btn btn-outline-secondary">
-                                            <span class="fas fa-plus"></span>
-                                            Tambah Rekening Baru
+                                <ul class="hni-other__product list-unstyled">
+                                    <li>
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product2.png" alt="">
                                         </a>
-                                    </div>
-                                </div>
-                                <p>Silakan transfer sebesar <span class="fw-bold">450.000</span> ke salah satu rekening di bawah. Transfer harus dilakukan sebelum pukul <span class="text-red700 fw-bold">13:41</span> WIB</p>
-                                <ul class="hni-list__bank list-unstyled">
-                                    <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>Mandiri</h5>
-                                        </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>01234567890</h5>
-                                        </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
+                                        <div class="desc-right">
+                                            <a href="#" class="hni-breadcrumb">Herbs Product</a>
+                                            <h5><a href="#">Madu Pahit</a></h5>
+                                            <span class="price">Rp 85.000</span>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>BCA</h5>
-                                        </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>02134536589</h5>
-                                        </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product3.png" alt="">
+                                        </a>
+                                        <div class="desc-right">
+                                            <a href="#" class="hni-breadcrumb">Herbs Product</a>
+                                            <h5><a href="#">N-Green</a></h5>
+                                            <span class="price">Rp 85.000</span>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>BNI</h5>
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product1.png" alt="">
+                                        </a>
+                                        <div class="desc-right">
+                                            <a href="#" class="hni-breadcrumb">Herbs Product</a>
+                                            <h5><a href="#">Centella Teh Sinergi</a></h5>
+                                            <span class="price">Rp 85.000</span>
                                         </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>45375349</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product3.png" alt="">
+                                        </a>
+                                        <div class="desc-right">
+                                            <a href="#" class="hni-breadcrumb">Herbs Product</a>
+                                            <h5><a href="#">N-Green</a></h5>
+                                            <span class="price">Rp 85.000</span>
                                         </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="img-left">
+                                            <img src="assets/img/img-product1.png" alt="">
+                                        </a>
+                                        <div class="desc-right">
+                                            <a href="#" class="hni-breadcrumb">Herbs Product</a>
+                                            <h5><a href="#">Centella Teh Sinergi</a></h5>
+                                            <span class="price">Rp 85.000</span>
                                         </div>
                                     </li>
                                 </ul>
-                                <p>Klik tombol Konfirmasi Pembayaran untuk mengirim bukti pembayaran</p>
-                                <a href="#" class="btn btn-pill btn-primary btn-large">KONFIRMASI PEMBAYARAN</a>
                             </div>
                         </div>
                     </div>
@@ -280,7 +327,7 @@
                         <div class="col-md-6 col-lg-7">
                             <form class="hni-fn__email">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Your Email"/>
+                                    <input type="text" class="form-control" placeholder="Your Email" />
                                     <div class="input-group-append">
                                         <button class="btn">SUBSCRIBE</button>
                                     </div>
@@ -340,7 +387,8 @@
                                 <li>
                                     <h5>Address</h5>
                                     <p>
-                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23, Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
+                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23,
+                                        Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
                                     </p>
                                 </li>
                                 <li>
@@ -351,11 +399,13 @@
                             <ul class="hni-address__mbl list-unstyled m-0">
                                 <li>
                                     <h5>Head Office</h5>
-                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI Jakarta, Indonesia 13450</p>
+                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI
+                                        Jakarta, Indonesia 13450</p>
                                 </li>
                                 <li>
                                     <h5>Leaders Office</h5>
-                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok Gede, Kota Bekasi, Jawa Barat 17412</p>
+                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok
+                                        Gede, Kota Bekasi, Jawa Barat 17412</p>
                                 </li>
                                 <li>
                                     <h5 class="d-inline-block">Telp:</h5>
@@ -432,4 +482,5 @@
         </div>
     </footer>
 </body>
+
 </html>

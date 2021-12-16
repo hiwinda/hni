@@ -1,0 +1,95 @@
+/*---Start:: Login---*/ 
+.hni-login {
+    padding: 150px 0 90px 0;
+    .hni-login__content {
+        max-width: 890px;
+        margin: 0 auto;
+        background-color: $white;
+        border: 1px solid #DEDEDE;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        @include border-radius(8px);
+        display: flex;
+        height: 100%;
+    }
+    &__left {
+        position: relative;
+        width: 320px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+    }
+    &__right {
+        padding: 40px 50px;       
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: $black700;
+            margin: 0;
+        }
+        .login-notes {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: $black700;
+            margin-top: 40px;
+            a {
+                color: $green700;
+                font-weight: 700;
+            }
+        }
+        form {
+            margin: 40px 0;
+            .form-control {
+                padding: 14px 20px;
+                @include border-radius(6px);
+                color: $black700;
+                margin-bottom: 10px;
+            }
+            .forget-password {
+                display: table;
+                margin-left: auto;
+                font-size: 14px;
+                color: $green700;
+                &:hover {
+                    color: #49781f;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-login {
+        padding: 80px 0 40px 0;
+        &__left {
+            display: none;
+        }
+        &__right {
+            padding: 30px;
+            h1 {
+                font-size: 24px;
+            }
+            p,
+            .form-control {
+                font-size: 14px;
+            }
+            form {
+                margin: 20px 0;
+                .form-control {
+                    padding: 10px 15px;
+                }
+            }
+            .login-notes {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+/*---End:: Login---*/ 
