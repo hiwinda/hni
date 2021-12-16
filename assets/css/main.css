@@ -78,6 +78,11 @@ a {
   padding: 12px 45px;
 }
 
+@media (max-width: 991px) {
+  .btn.btn-large {
+    padding: 10px 25px;
+  }
+}
 /*---End:: Custom Button---*/
 /*---Start:: Navbar---*/
 .hni-top__navbar {
@@ -1127,7 +1132,7 @@ a {
   }
 }
 /*---End:: Main Content - Category---*/
-/*---Start:: Main Content - Product Homepage---*/
+/*---Start:: Main Content - Product---*/
 .hni-product__nav {
   margin-bottom: 35px;
   display: flex;
@@ -1439,7 +1444,7 @@ a {
     margin-top: 15px;
   }
 }
-/*---End:: Main Content - Product Homepage---*/
+/*---End:: Main Content - Product---*/
 /*---Start:: Main Content - Discount Homepage---*/
 .hni-banner__main {
   position: relative;
@@ -1697,9 +1702,6 @@ a {
   .hni-payment__content {
     padding: 20px 0;
   }
-  .hni-payment__content > .btn {
-    padding: 10px 25px;
-  }
   .hni-payment__content .hni-payment__select_acc .hni-payment__account {
     display: block;
   }
@@ -1888,6 +1890,107 @@ a {
   }
 }
 /*---End:: Cart---*/
+/*---Start:: Login---*/
+.hni-login {
+  padding: 180px 0 90px 0;
+}
+.hni-login .hni-login__content {
+  max-width: 890px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -border-radius: 8px;
+  display: flex;
+  height: 100%;
+}
+.hni-login__left {
+  position: relative;
+  height: 524px;
+  width: 320px;
+}
+.hni-login__left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.hni-login__right {
+  padding: 40px 50px;
+}
+.hni-login__right h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hni-login__right p {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+.hni-login__right .login-notes {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  margin-top: 40px;
+}
+.hni-login__right .login-notes a {
+  color: #5E982A;
+  font-weight: 700;
+}
+.hni-login__right form {
+  margin: 40px 0;
+}
+.hni-login__right form .form-control {
+  padding: 14px 20px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -border-radius: 6px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.hni-login__right form .forget-password {
+  display: table;
+  margin-left: auto;
+  font-size: 14px;
+  color: #5E982A;
+}
+.hni-login__right form .forget-password:hover {
+  color: #49781f;
+}
+
+@media (max-width: 767px) {
+  .hni-login {
+    padding: 80px 0 40px 0;
+  }
+  .hni-login__left {
+    display: none;
+  }
+  .hni-login__right {
+    padding: 30px;
+  }
+  .hni-login__right h1 {
+    font-size: 24px;
+  }
+  .hni-login__right p,
+.hni-login__right .form-control {
+    font-size: 14px;
+  }
+  .hni-login__right form {
+    margin: 20px 0;
+  }
+  .hni-login__right form .form-control {
+    padding: 10px 15px;
+  }
+  .hni-login__right .login-notes {
+    margin-top: 20px;
+  }
+}
+/*---End:: Login---*/
 /*---Start:: Account Sidebar---*/
 .hni-account__sidebar {
   width: 100%;
