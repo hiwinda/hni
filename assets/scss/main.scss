@@ -54,6 +54,9 @@ a {
     @include border-radius(6px);
     background-image: url(../img/select_dropdown.png);
     background-size: 10px;
+    &:focus {
+        border-color: #AAAAAA;
+    }
 }
 .hni-shorting {
     &__select {
@@ -112,6 +115,7 @@ a {
 @import 'product';
 @import 'homepageDiscount';
 @import 'payment';
+@import 'cart';
 @import 'accountSidebar';
 
 /*---PAGINATION---*/ 

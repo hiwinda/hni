@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
     <!-- JS Main -->
     <script src="assets/js/main.js"></script>
 </head>
+
 <body>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
@@ -95,7 +97,7 @@
                             <div class="hni-header__search">
                                 <form>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Cari produk disini"/>
+                                        <input type="text" class="form-control" placeholder="Cari produk disini" />
                                         <div class="input-group-append">
                                             <button class="btn"><span class="fas fa-search"></span></button>
                                         </div>
@@ -130,7 +132,7 @@
         <section class="hni-header__section">
             <div class="container">
                 <div class="hni-space-content">
-                    <h1>Payment</h1>
+                    <h1>Shopping Cart</h1>
                     <ul class="list-breadcrumb list-unstyled clearfix">
                         <li>
                             <a href="#">Home</a>
@@ -139,131 +141,128 @@
                         <li>
                             <a href="#">Shopping Cart</a>
                         </li>
-                        <li>-</li>
-                        <li>
-                            <a href="#">Payment</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </section>
         <div class="container">
-            <!-- payment confirmation -->
+            <!-- product -->
             <section class="hni-space-content">
-                <div class="hni-payment">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-4">
-                            <div class="hni-payment__sidebar">
-                                <div class="hni-title">
-                                    <h5>Your Shopping Receipt</h5>
-                                </div>
-                                <div class="hni-ps__cart">
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product2.png" alt="">
-                                        </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">2x</div>
+                <div class="hni-content">
+                    <div class="hni-cart table-responsive">
+                        <table class="hni-table__cart table">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="text-start">Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th class="text-end">Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
                                     </div>
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product5.png" alt="">
-                                        </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">3x</div>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
                                     </div>
-                                    <div class="ps-cart__item">
-                                        <div class="psc-img">
-                                            <img src="assets/img/img-product1.png" alt="">
-                                        </div>
-                                        <div class="psc-title">Andrographis Centella</div>
-                                        <div class="psc-amount">2x</div>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
                                     </div>
-                                </div>
-                                <div class="hni-ps__address">
-                                    <span>Jasa Pengiriman</span>
-                                    <h5>Gojek (Same Day)</h5>
-                                    <span>Tujuan</span>
-                                    <p>
-                                        <span>Rumah Ibu</span>
-                                        Jl. Pilar Baru no 12, Kedoya Selatan, Jakarta Barat
-                                    </p>
-                                </div>
-                                <div class="hni-ps__total">
-                                    <span>Total Pembayaran</span>
-                                    <span>Rp 450.000</span>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- shipping -->
+                    <div class="hni-cart__shipping">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div class="hni-cs__expedition">
+                                    <label for="expedition">Pilih Jasa Pengiriman</label>
+                                    <select class="form-select" id="expedition" aria-label="Short By">
+                                        <option selected>Gojek (Same Day)</option>
+                                        <option value="1">JnT</option>
+                                        <option value="2">Sicepat</option>
+                                        <option value="3">JNE</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-8">
-                            <div class="hni-payment__content">
-                                <div class="hni-title">
-                                    <h5>Metode Pembayaran</h5>
-                                </div>
-                                <div class="hni-payment__select_acc">
-                                    <label for="">Pilih Rekening</label>
-                                    <div class="hni-payment__account">
-                                        <select class="form-select" id="shorting-product" aria-label="Pilih Rekening">
-                                            <option selected>Rekening Pribadi</option>
-                                            <option value="1">Rekening Pribadi 2</option>
-                                            <option value="2">Rekening Pribadi 3</option>
+                            <div class="col-md-5">
+                                <div class="hni-cs__destination">
+                                    <label for="destination">Tujuan Pengiriman</label>
+                                    <div class="d-lg-flex align-items-lg-center">
+                                        <select class="form-select" id="destination" aria-label="Short By">
+                                            <option selected>Rumah Ibu</option>
+                                            <option value="1">Rumah</option>
+                                            <option value="2">Kantor</option>
                                         </select>
                                         <a href="#" class="btn btn-outline-secondary">
                                             <span class="fas fa-plus"></span>
-                                            Tambah Rekening Baru
+                                            Tambah Alamat Baru
                                         </a>
                                     </div>
                                 </div>
-                                <p>Silakan transfer sebesar <span class="fw-bold">450.000</span> ke salah satu rekening di bawah. Transfer harus dilakukan sebelum pukul <span class="text-red700 fw-bold">13:41</span> WIB</p>
-                                <ul class="hni-list__bank list-unstyled">
-                                    <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>Mandiri</h5>
-                                        </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>01234567890</h5>
-                                        </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>BCA</h5>
-                                        </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>02134536589</h5>
-                                        </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <span>Bank:</span>
-                                            <h5>BNI</h5>
-                                        </div>
-                                        <div>
-                                            <span>No. Rekening:</span>
-                                            <h5>45375349</h5>
-                                        </div>
-                                        <div>
-                                            <span>Nama:</span>
-                                            <h5>Halal Network Indonesia</h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <p>Klik tombol Konfirmasi Pembayaran untuk mengirim bukti pembayaran</p>
-                                <a href="#" class="btn btn-pill btn-primary btn-large">KONFIRMASI PEMBAYARAN</a>
                             </div>
+                            <div class="col-md-3">
+                                <div class="hni-cs__cost">
+                                    <span class="d-block">&nbsp;</span>
+                                    <span class="d-block text-end">Rp 30.000</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Total Payment -->
+                    <div class="hni-cart__payment">
+                        <div class="row">
+                            <div class="col-6 col-md-9">Total: </div>
+                            <div class="col-6 col-md-3">Rp 450.000</div>
                         </div>
                     </div>
+                    <a href="#" class="btn btn-pill btn-primary btn-large d-table mx-auto">LANJUT KE PEMBAYARAN</a>
                 </div>
             </section>
         </div>
@@ -280,7 +279,7 @@
                         <div class="col-md-6 col-lg-7">
                             <form class="hni-fn__email">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Your Email"/>
+                                    <input type="text" class="form-control" placeholder="Your Email" />
                                     <div class="input-group-append">
                                         <button class="btn">SUBSCRIBE</button>
                                     </div>
@@ -340,7 +339,8 @@
                                 <li>
                                     <h5>Address</h5>
                                     <p>
-                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23, Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
+                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23,
+                                        Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
                                     </p>
                                 </li>
                                 <li>
@@ -351,11 +351,13 @@
                             <ul class="hni-address__mbl list-unstyled m-0">
                                 <li>
                                     <h5>Head Office</h5>
-                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI Jakarta, Indonesia 13450</p>
+                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI
+                                        Jakarta, Indonesia 13450</p>
                                 </li>
                                 <li>
                                     <h5>Leaders Office</h5>
-                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok Gede, Kota Bekasi, Jawa Barat 17412</p>
+                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok
+                                        Gede, Kota Bekasi, Jawa Barat 17412</p>
                                 </li>
                                 <li>
                                     <h5 class="d-inline-block">Telp:</h5>
@@ -432,4 +434,5 @@
         </div>
     </footer>
 </body>
+
 </html>

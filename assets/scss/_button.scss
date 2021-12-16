@@ -12,8 +12,8 @@
         color: $white;
         &:hover,
         &:focus {
-            background-color: $white;
-            color: $green700;
+            background-color: #49781f;
+            color: $white;
         }
     }
     &.btn-outline-primary {
@@ -33,6 +33,9 @@
         &:focus {
             background-color: $black100;
         }
+    }
+    &.btn-large {
+        padding: 12px 45px;
     }
 }
 /*---End:: Custom Button---*/ 
