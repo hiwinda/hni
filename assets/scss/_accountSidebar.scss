@@ -29,7 +29,68 @@
             top: 30px;
             left: 50%;
             transform: translateX(-50%);
+
+            input{
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+
+            &::before{
+                content: "";
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: url(../img/ic-camera.svg) no-repeat center;
+            }
         }
     }
-}
+
+    .hni-acc__nav{
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+
+        li{
+            height: 60px;
+            border-bottom: 1px solid #dedede;
+            position: relative;
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            a{
+                display: block;
+                width: 100%;
+                height: 60px;
+                padding: 18px 30px 15px 80px;
+                font-size: 16px;
+                color: #333;
+
+                svg{
+                    position: absolute;
+                    left: 40px;
+                    transform: translateX(-50%);
+                    font-size: 20px;
+                    color: #5E982A;
+                }
+
+                &:hover{
+                    background: #eaeaea;
+                }
+            }
+            &.active a{
+                background: #5E982A;
+                color: #fff;
+
+                svg{
+                    color: #fff;
+                }
+            }
+        }
+    }
+} 
 /*---End:: Account Sidebar---*/ 

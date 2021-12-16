@@ -1492,6 +1492,146 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+.hni-account__sidebar .hni-profile__picture .hni-change__photo input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.hni-account__sidebar .hni-profile__picture .hni-change__photo::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(../img/ic-camera.svg) no-repeat center;
+}
+.hni-account__sidebar .hni-acc__nav {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.hni-account__sidebar .hni-acc__nav li {
+  height: 60px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.hni-account__sidebar .hni-acc__nav li:last-child {
+  border-bottom: none;
+}
+.hni-account__sidebar .hni-acc__nav li a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 18px 30px 15px 80px;
+  font-size: 16px;
+  color: #333;
+}
+.hni-account__sidebar .hni-acc__nav li a svg {
+  position: absolute;
+  left: 40px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #5E982A;
+}
+.hni-account__sidebar .hni-acc__nav li a:hover {
+  background: #eaeaea;
+}
+.hni-account__sidebar .hni-acc__nav li.active a {
+  background: #5E982A;
+  color: #fff;
+}
+.hni-account__sidebar .hni-acc__nav li.active a svg {
+  color: #fff;
+}
+
+/*---End:: Account Sidebar---*/
+/*---Start:: Account Sidebar---*/
+.hni-dashboard__content {
+  width: 100%;
+  padding: 30px 50px;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  float: left;
+}
+.hni-dashboard__content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+.hni-dashboard__content form {
+  width: 100%;
+  float: left;
+  max-width: 460px;
+}
+.hni-dashboard__content form .hni-inp_group {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  float: left;
+}
+.hni-dashboard__content form .hni-inp_group.radio {
+  margin-bottom: 0;
+  border-bottom: 1px solid #dedede;
+  padding: 20px 0;
+}
+.hni-dashboard__content form .hni-inp_group.radio:first {
+  padding-top: 0;
+}
+.hni-dashboard__content form .hni-inp_group.radio:last-child {
+  margin-bottom: 30px;
+}
+.hni-dashboard__content form .hni-inp_group.radio label {
+  font-size: 16px;
+  margin-top: -3px;
+  margin-bottom: 0;
+}
+.hni-dashboard__content form .hni-inp_group.radio label span {
+  width: 100%;
+  display: block;
+  color: #888;
+  font-size: 14px;
+}
+.hni-dashboard__content form label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.hni-dashboard__content form input[type=text],
+.hni-dashboard__content form input[type=email],
+.hni-dashboard__content form input[type=password],
+.hni-dashboard__content form select {
+  width: 100%;
+  float: left;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  background: #fff;
+}
+.hni-dashboard__content form textarea {
+  width: 100%;
+  float: left;
+  height: 160px;
+  padding: 20px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+}
+.hni-dashboard__content form input[type=radio],
+.hni-dashboard__content form input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+  float: left;
+}
+.hni-dashboard__content form input[type=radio] + label,
+.hni-dashboard__content form input[type=checkbox] + label {
+  width: calc(100% - 40px);
+  float: left;
+}
 
 /*---End:: Account Sidebar---*/
 /*---PAGINATION---*/
@@ -1526,6 +1666,10 @@ a {
 .hni-pagination ul li.active a,
 .hni-pagination ul li a:hover {
   color: #5E982A;
+}
+
+.hni-account_dashboard {
+  padding: 90px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
