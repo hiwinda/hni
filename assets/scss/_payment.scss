@@ -2,10 +2,13 @@
 .hni-payment {
     margin: 40px auto;
     max-width: 950px;
+    .hni-title h5 {
+        font-size: 18px;
+    }
     &__sidebar {
         @include border-radius(8px);
         border: 1px solid #dedede;
-        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
         background-color: $white;
         padding: 30px;
         position: relative;
@@ -18,9 +21,6 @@
             background-image: url(../img/payment-frame.png);
             height: 21px;
             width: 100%;
-        }
-        .hni-title h5 {
-            font-size: 18px;
         }
         .hni-ps__cart {
             .ps-cart__item {
@@ -77,54 +77,57 @@
             font-size: 16px;
         }
     }
-}
-.hni-payment__confirmation {
-    border: 1px solid #dedede;
-    @include border-radius(8px);
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-    background-color: $white;
-    padding: 30px;
-    margin: 90px auto;
-    max-width: 100%;
-    width: 660px;
-    h5 {
-        font-size: 16px;
-        margin-bottom: 20px;
+    &__content {
+        padding: 30px;
     }
-    .btn {
-        margin: 0 auto;
-        display: table;
-    }
-    // custom file input
-    .form-file {
-        background-color: #FAFAFA;
-        @include border-radius(6px);
+    &__confirmation {
         border: 1px solid #dedede;
-        position: relative;
-        padding: 60px 20px;
-        margin-bottom: 30px;
-        .custom-file-input {
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            outline: none;
-            opacity: 0;
-            cursor: pointer;
+        @include border-radius(8px);
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        padding: 30px;
+        margin: 90px auto;
+        max-width: 100%;
+        width: 660px;
+        h5 {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
-        .drag-text {
-            text-align: center;
-            font-size: 14px;
-            color: #555555;
-            svg {
-                font-size: 36px;
-                display: table;
-                margin: 0 auto;
-                margin-bottom: 20px;
+        .btn {
+            margin: 0 auto;
+            display: table;
+        }
+        // custom file input
+        .form-file {
+            background-color: #FAFAFA;
+            @include border-radius(6px);
+            border: 1px solid #dedede;
+            position: relative;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+            .custom-file-input {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                outline: none;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .drag-text {
+                text-align: center;
+                font-size: 14px;
+                color: #555555;
+                svg {
+                    font-size: 36px;
+                    display: table;
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
