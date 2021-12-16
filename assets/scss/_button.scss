@@ -25,5 +25,14 @@
             color: $white;
         }
     }
+    &.btn-outline-secondary {
+        border: 1px solid #dedede;
+        color: $black800;
+        background-color: $white;
+        &:hover,
+        &:focus {
+            background-color: $black100;
+        }
+    }
 }
 /*---End:: Custom Button---*/ 

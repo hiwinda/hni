@@ -7,6 +7,10 @@
   color: #5E982A;
 }
 
+.text-red700 {
+  color: #D02828;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -61,6 +65,14 @@ a {
 .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus {
   background-color: #5E982A;
   color: #ffffff;
+}
+.btn.btn-outline-secondary {
+  border: 1px solid #dedede;
+  color: #000000;
+  background-color: #ffffff;
+}
+.btn.btn-outline-secondary:hover, .btn.btn-outline-secondary:focus {
+  background-color: #F6F6F6;
 }
 
 /*---End:: Custom Button---*/
@@ -711,6 +723,19 @@ a {
   color: #5E982A;
 }
 
+.form-select {
+  font-family: "Nunito", sans-serif;
+  color: #333333;
+  padding: 7px 15px;
+  font-size: 16px;
+  border-color: #dedede;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -border-radius: 6px;
+  background-image: url(../img/select_dropdown.png);
+  background-size: 10px;
+}
+
 .hni-shorting__select {
   display: flex;
   align-items: center;
@@ -722,16 +747,8 @@ a {
   color: #333333;
 }
 .hni-shorting__select .form-select {
-  font-family: "Nunito", sans-serif;
-  color: #333333;
   width: 200px;
   max-width: 100%;
-  padding: 7px 15px;
-  font-size: 16px;
-  border-color: #dedede;
-  -webkit-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -border-radius: 6px;
   margin-left: 10px;
 }
 .hni-shorting__ic {
@@ -1320,6 +1337,7 @@ a {
 }
 .hni-payment .hni-title h5 {
   font-size: 18px;
+  padding-bottom: 20px;
 }
 .hni-payment__sidebar {
   -webkit-border-radius: 8px;
@@ -1343,7 +1361,7 @@ a {
 }
 .hni-payment__sidebar .hni-ps__cart .ps-cart__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 16px;
   color: #333333;
   margin: 20px 0;
@@ -1395,6 +1413,70 @@ a {
 }
 .hni-payment__content {
   padding: 30px;
+}
+.hni-payment__content > .btn {
+  padding: 12px 45px;
+  margin-top: 20px;
+}
+.hni-payment__content .hni-payment__select_acc label {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+  display: block;
+}
+.hni-payment__content .hni-payment__select_acc .hni-payment__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.hni-payment__content .hni-payment__select_acc .hni-payment__account .form-select {
+  max-width: 290px;
+  padding: 12px 20px;
+}
+.hni-payment__content .hni-payment__select_acc .hni-payment__account .btn {
+  font-size: 14px;
+  padding: 8px 15px;
+  margin: 0;
+}
+.hni-payment__content .hni-payment__select_acc .hni-payment__account .btn svg {
+  font-size: 13px;
+  color: #5E982A;
+  margin-right: 5px;
+}
+.hni-payment__content p {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.hni-payment .hni-list__bank {
+  color: #333333;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.hni-payment .hni-list__bank li {
+  border-bottom: 1px solid #dedede;
+  padding: 10px 0;
+  display: flex;
+}
+.hni-payment .hni-list__bank li > div:first-child {
+  width: 115px;
+}
+.hni-payment .hni-list__bank li > div:nth-child(2) {
+  flex: 1%;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+.hni-payment .hni-list__bank li span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.hni-payment .hni-list__bank li h5 {
+  line-height: 1.5em;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
 }
 .hni-payment__confirmation {
   border: 1px solid #dedede;
@@ -1452,6 +1534,32 @@ a {
 }
 
 @media (max-width: 991px) {
+  .hni-payment .hni-title h5 {
+    padding-bottom: 15px;
+  }
+  .hni-payment__sidebar {
+    padding: 20px;
+  }
+  .hni-payment__content {
+    padding: 20px 0;
+  }
+  .hni-payment__content .hni-payment__select_acc .hni-payment__account {
+    display: block;
+  }
+  .hni-payment__content .hni-payment__select_acc .hni-payment__account .form-select {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .hni-payment .hni-list__bank li {
+    display: block;
+  }
+  .hni-payment .hni-list__bank li > div:first-child {
+    width: auto;
+  }
+  .hni-payment .hni-list__bank li > div:nth-child(2) {
+    margin: 5px 0;
+    flex: unset;
+  }
   .hni-payment__confirmation {
     padding: 20px;
     margin: 40px 0;

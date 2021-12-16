@@ -4,6 +4,7 @@
     max-width: 950px;
     .hni-title h5 {
         font-size: 18px;
+        padding-bottom: 20px;
     }
     &__sidebar {
         @include border-radius(8px);
@@ -25,7 +26,7 @@
         .hni-ps__cart {
             .ps-cart__item {
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 font-size: 16px;
                 color: $black700;
                 margin: 20px 0;
@@ -79,6 +80,74 @@
     }
     &__content {
         padding: 30px;
+        > .btn {
+            padding: 12px 45px;
+            margin-top: 20px;
+        }
+        .hni-payment__select_acc {
+            label {
+                font-size: 16px;
+                color: $black700;
+                margin-bottom: 10px;
+                display: block;
+            }
+            .hni-payment__account {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                .form-select {
+                    max-width: 290px;
+                    padding: 12px 20px;
+                }
+                .btn {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    margin: 0;
+                    svg {
+                        font-size: 13px;
+                        color: $green700;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 16px;
+            color: $black700;
+            margin-bottom: 10px;
+        }
+    }
+    .hni-list__bank {
+        color: $black700;
+        width: 100%;
+        margin-bottom: 30px;
+        li {
+            border-bottom: 1px solid #dedede;
+            padding: 10px 0;
+            display: flex;
+            >div{
+                &:first-child {
+                    width: 115px;
+                }
+                &:nth-child(2) {
+                    flex: 1%;
+                    margin-left: 25px;
+                    margin-right: 20px;
+                }
+            }
+            span {
+                display: block;
+                font-size: 12px;
+                line-height: 1.5em;
+            }
+            h5 {
+                line-height: 1.5em;
+                font-weight: 700;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
     }
     &__confirmation {
         border: 1px solid #dedede;
@@ -133,11 +202,41 @@
     }
 }
 @media (max-width: 991px) {
-    .hni-payment__confirmation {
-        padding: 20px;
-        margin: 40px 0;
-        .form-file {
-            padding: 40px 15px;
+    .hni-payment{
+        .hni-title h5 {
+            padding-bottom: 15px;
+        }
+        &__sidebar {
+            padding: 20px;
+        }
+        &__content {
+            padding: 20px 0;
+            .hni-payment__select_acc .hni-payment__account {
+                display: block;
+                .form-select {
+                    margin-bottom: 10px;
+                    max-width: 100%;
+                }
+            }
+        }
+        .hni-list__bank li {
+            display: block;
+            >div {
+                &:first-child {
+                    width: auto;
+                }
+                &:nth-child(2) {
+                    margin: 5px 0;
+                    flex: unset;
+                }
+            }
+        }
+        &__confirmation {
+            padding: 20px;
+            margin: 40px 0;
+            .form-file {
+                padding: 40px 15px;
+            }
         }
     }
 }
