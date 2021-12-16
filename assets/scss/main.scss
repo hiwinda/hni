@@ -118,6 +118,7 @@ a {
 @import 'cart';
 @import 'login';
 @import 'accountSidebar';
+@import 'accountDashboardCt';
 
 /*---PAGINATION---*/ 
 .hni-pagination {
@@ -149,4 +150,8 @@ a {
             }
         }
     }
+}
+
+.hni-account_dashboard{
+    padding: 90px 0;
 }
