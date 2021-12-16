@@ -35,6 +35,8 @@
                     height: 60px;
                     img {
                         max-width: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
                     }
                 }
                 .psc-title {
@@ -211,12 +213,23 @@
         }
         &__content {
             padding: 20px 0;
-            .hni-payment__select_acc .hni-payment__account {
-                display: block;
-                .form-select {
-                    margin-bottom: 10px;
-                    max-width: 100%;
+            > .btn {
+                padding: 10px 25px;
+            }
+            .hni-payment__select_acc {
+                .hni-payment__account {
+                    display: block;
+                    .form-select {
+                        margin-bottom: 10px;
+                        max-width: 100%;
+                        padding: 8px 15px;
+                    }
                 }
+            }
+            .hni-payment__select_acc label,
+            .hni-payment__select_acc .form-select,
+            p {
+                font-size: 14px;
             }
         }
         .hni-list__bank li {
@@ -238,6 +251,11 @@
                 padding: 40px 15px;
             }
         }
+    }
+}
+@media (max-width: 767px) {
+    .hni-payment__sidebar {
+        margin-bottom: 40px;
     }
 }
 /*---End:: Main Content - Payment---*/ 

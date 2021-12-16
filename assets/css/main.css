@@ -708,6 +708,72 @@ a {
   }
 }
 /*---End:: Sidebar---*/
+/*---Start:: Sidebar Right---*/
+.hni-sidebar__right {
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -border-radius: 8px;
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+  position: relative;
+  padding: 20px;
+}
+.hni-sidebar__right .hni-title {
+  margin-bottom: 0;
+}
+.hni-sidebar__right .hni-title h5 {
+  padding-bottom: 20px;
+}
+.hni-sidebar__right .hni-other__product {
+  margin: 0;
+}
+.hni-sidebar__right .hni-other__product li {
+  border-top: 1px solid #dedede;
+  padding: 20px 0;
+  display: flex;
+}
+.hni-sidebar__right .hni-other__product li:first-child {
+  border: none;
+}
+.hni-sidebar__right .hni-other__product li .img-left {
+  width: 80px;
+  height: 80px;
+}
+.hni-sidebar__right .hni-other__product li .img-left img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.hni-sidebar__right .hni-other__product li .desc-right {
+  margin-left: 20px;
+  flex: 1%;
+}
+.hni-sidebar__right .hni-other__product li .desc-right .hni-breadcrumb {
+  font-size: 12px;
+  text-align: left;
+}
+.hni-sidebar__right .hni-other__product li .desc-right h5 {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1em;
+}
+.hni-sidebar__right .hni-other__product li .desc-right h5 a:hover {
+  color: #5E982A;
+}
+.hni-sidebar__right .hni-other__product li .desc-right .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #748B5F;
+  display: table;
+}
+
+@media (max-width: 991px) {
+  .hni-sidebar__right {
+    margin-top: 40px;
+  }
+}
+/*---End:: Sidebar Right---*/
 /*---MAIN CONTENT---*/
 .hni-content {
   padding: 40px 0;
@@ -1286,6 +1352,87 @@ a {
   padding: 90px 0;
 }
 
+/*---SEARCH PRODUCT CARD---*/
+.hni-product__card {
+  margin: 40px 0;
+}
+.hni-product__card .hni-pc__item {
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -border-radius: 8px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border: 1px solid #DEDEDE;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  margin: 20px 0;
+}
+.hni-product__card .hni-pc__item .img-left {
+  width: 100px;
+  height: 100px;
+}
+.hni-product__card .hni-pc__item .img-left img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.hni-product__card .hni-pc__item .product-line {
+  width: 47px;
+  margin: 0 10px;
+}
+.hni-product__card .hni-pc__item .desc-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1%;
+}
+.hni-product__card .hni-pc__item .desc-right .hni-breadcrumb {
+  text-align: left;
+  display: table;
+  font-size: 14px;
+}
+.hni-product__card .hni-pc__item .desc-right h5 {
+  margin: 5px 0;
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: 700;
+}
+.hni-product__card .hni-pc__item .desc-right h5 a:hover {
+  color: #5E982A;
+}
+.hni-product__card .hni-pc__item .desc-right .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #748B5F;
+  display: table;
+}
+.hni-product__card .hni-pc__item .desc-right .btn {
+  padding: 7px 25px;
+}
+
+@media (max-width: 767px) {
+  .hni-product__card .hni-pc__item {
+    display: block;
+  }
+  .hni-product__card .hni-pc__item .img-left {
+    width: 50%;
+    display: table;
+    margin: 0 auto;
+    height: auto;
+  }
+  .hni-product__card .hni-pc__item .product-line {
+    display: none;
+  }
+  .hni-product__card .hni-pc__item .desc-right {
+    display: block;
+    margin-top: 10px;
+  }
+  .hni-product__card .hni-pc__item .desc-right .btn {
+    display: table;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
 /*---End:: Main Content - Product Homepage---*/
 /*---Start:: Main Content - Discount Homepage---*/
 .hni-banner__main {
@@ -1372,6 +1519,8 @@ a {
 }
 .hni-payment__sidebar .hni-ps__cart .ps-cart__item .psc-img img {
   max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .hni-payment__sidebar .hni-ps__cart .ps-cart__item .psc-title {
   margin-left: 20px;
@@ -1543,12 +1692,21 @@ a {
   .hni-payment__content {
     padding: 20px 0;
   }
+  .hni-payment__content > .btn {
+    padding: 10px 25px;
+  }
   .hni-payment__content .hni-payment__select_acc .hni-payment__account {
     display: block;
   }
   .hni-payment__content .hni-payment__select_acc .hni-payment__account .form-select {
     margin-bottom: 10px;
     max-width: 100%;
+    padding: 8px 15px;
+  }
+  .hni-payment__content .hni-payment__select_acc label,
+.hni-payment__content .hni-payment__select_acc .form-select,
+.hni-payment__content p {
+    font-size: 14px;
   }
   .hni-payment .hni-list__bank li {
     display: block;
@@ -1566,6 +1724,11 @@ a {
   }
   .hni-payment__confirmation .form-file {
     padding: 40px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .hni-payment__sidebar {
+    margin-bottom: 40px;
   }
 }
 /*---End:: Main Content - Payment---*/
