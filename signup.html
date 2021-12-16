@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,26 @@
     <!-- JS Main -->
     <script src="assets/js/main.js"></script>
 </head>
+
 <body>
+    <!-- modal search mobile -->
+    <div class="modal hni-modal-search fade" id="modalSearch" tabindex="-1" aria-labelledby="modalSearchLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari produk disini" />
+                            <div class="input-group-append">
+                                <button class="btn"><span class="fas fa-search"></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
         <div class="container">
@@ -33,14 +53,14 @@
                     </button>
                     <div class="nav-button__mbl">
                         <div class="hni-nav__button">
-                            <a href="#" class="hb-wishlist">
+                            <a href="wishlist.html" class="hb-wishlist">
                                 <span class="fas fa-heart"></span>
                             </a>
-                            <a href="#" class="hb-cart">
+                            <a href="cart.html" class="hb-cart">
                                 <span class="fas fa-shopping-cart"></span>
                             </a>
                         </div>
-                        <a href="#" class="hb-login">
+                        <a href="signin.html" class="hb-login">
                             <span class="fas fa-user"></span>
                         </a>
                     </div>
@@ -93,9 +113,11 @@
                     <div class="col-6 col-md-10 col-lg-8">
                         <div class="hni-header__hb">
                             <div class="hni-header__search">
+                                <button type="button" class="btn btn-search__mbl" data-bs-toggle="modal"
+                                    data-bs-target="#modalSearch"><span class="fas fa-search"></span></button>
                                 <form>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Cari produk disini"/>
+                                        <input type="text" class="form-control" placeholder="Cari produk disini" />
                                         <div class="input-group-append">
                                             <button class="btn"><span class="fas fa-search"></span></button>
                                         </div>
@@ -103,16 +125,16 @@
                                 </form>
                             </div>
                             <div class="hni-header__button">
-                                <a href="#" class="hb-wishlist">
+                                <a href="wishlist.html" class="hb-wishlist">
                                     <span class="fas fa-heart"></span>
                                 </a>
-                                <a href="#" class="hb-cart">
+                                <a href="cart.html" class="hb-cart">
                                     <span class="fas fa-shopping-cart"></span>
                                     <span class="hb-cart__count">2</span>
                                 </a>
                             </div>
                             <div class="hni-header__login">
-                                <a href="#" class="hb-login">
+                                <a href="signin.html" class="hb-login">
                                     <span class="hb-user">
                                         <span class="fas fa-user"></span>
                                     </span>
@@ -162,7 +184,7 @@
                         <div class="col-md-6 col-lg-7">
                             <form class="hni-fn__email">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Your Email"/>
+                                    <input type="text" class="form-control" placeholder="Your Email" />
                                     <div class="input-group-append">
                                         <button class="btn">SUBSCRIBE</button>
                                     </div>
@@ -222,7 +244,8 @@
                                 <li>
                                     <h5>Address</h5>
                                     <p>
-                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23, Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
+                                        Villa Mutiara Cikarang Cifest Hill Ruko Ivory Mansion Blok R-7 No.22-23,
+                                        Ciantra, Cikarang Sel., Bekasi, Jawa Barat 17530
                                     </p>
                                 </li>
                                 <li>
@@ -233,11 +256,13 @@
                             <ul class="hni-address__mbl list-unstyled m-0">
                                 <li>
                                     <h5>Head Office</h5>
-                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI Jakarta, Indonesia 13450</p>
+                                    <p>Jl. Kelapa Sawit Raya Blok H-11 Pondok Kelapa, Duren Sawit, Jakarta Timur DKI
+                                        Jakarta, Indonesia 13450</p>
                                 </li>
                                 <li>
                                     <h5>Leaders Office</h5>
-                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok Gede, Kota Bekasi, Jawa Barat 17412</p>
+                                    <p>Komplek Sentra Kota Jatibening Blok F1-F5 RT001/RW003, Jatibening Baru, Pondok
+                                        Gede, Kota Bekasi, Jawa Barat 17412</p>
                                 </li>
                                 <li>
                                     <h5 class="d-inline-block">Telp:</h5>
@@ -314,4 +339,5 @@
         </div>
     </footer>
 </body>
+
 </html>

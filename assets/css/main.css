@@ -330,31 +330,6 @@ a {
   align-items: center;
   justify-content: flex-end;
 }
-.hni-header .hni-header__search .input-group {
-  border: 1px solid #DEDEDE;
-  align-items: center;
-  -webkit-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -border-radius: 25px;
-  max-width: 100%;
-  width: 400px;
-}
-.hni-header .hni-header__search .input-group .form-control {
-  color: #777777;
-  border: none;
-  padding: 10px 10px 10px 20px;
-  height: 50px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-.hni-header .hni-header__search .input-group .form-control:focus-within, .hni-header .hni-header__search .input-group .form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
-.hni-header .hni-header__search .input-group .btn {
-  color: #5E982A;
-  font-size: 20px;
-}
 .hni-header .hni-header__button {
   -webkit-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -438,6 +413,41 @@ a {
   font-size: 21px;
 }
 
+.hni-header__search .input-group,
+.hni-modal-search .input-group {
+  border: 1px solid #DEDEDE;
+  align-items: center;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -border-radius: 25px;
+  max-width: 100%;
+  width: 400px;
+}
+.hni-header__search .input-group .form-control,
+.hni-modal-search .input-group .form-control {
+  color: #777777;
+  border: none;
+  padding: 10px 10px 10px 20px;
+  height: 50px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.hni-header__search .input-group .form-control:focus-within, .hni-header__search .input-group .form-control:focus,
+.hni-modal-search .input-group .form-control:focus-within,
+.hni-modal-search .input-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.hni-header__search .input-group .btn,
+.hni-modal-search .input-group .btn {
+  color: #5E982A;
+  font-size: 20px;
+}
+
+.btn-search__mbl {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .hni-header .hni-header__search .input-group {
     width: 300px;
@@ -467,7 +477,44 @@ a {
 .hni-top__navbar .hni-header .hni-header__login {
     display: none;
   }
+
+  /* search mobile */
+  .hni-header__search .btn-search__mbl {
+    display: table;
+    margin-left: auto;
+    color: #5E982A;
+    padding: 5px;
+  }
+  .hni-header__search .btn-search__mbl svg {
+    font-size: 20px;
+  }
+  .hni-header__search form {
+    display: none;
+  }
 }
+/* search modal */
+.hni-modal-search .modal-content {
+  background-color: transparent;
+  border: none;
+}
+.hni-modal-search .modal-content .modal-body {
+  padding: 0;
+}
+.hni-modal-search .modal-content .modal-body .input-group {
+  background-color: #ffffff;
+  width: 100%;
+  -webkit-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -border-radius: 45px;
+}
+.hni-modal-search .modal-content .modal-body .input-group .form-control {
+  -webkit-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -border-radius: 45px;
+  height: auto;
+  padding: 20px 20px 20px 30px;
+}
+
 /*---End:: Navbar---*/
 /*---Start:: Footer---*/
 .hni-footer .hni-footer__newsletter h1 {
@@ -1133,6 +1180,20 @@ a {
 }
 /*---End:: Main Content - Category---*/
 /*---Start:: Main Content - Product---*/
+.btn-wishlist {
+  font-weight: 600;
+  font-size: 16px;
+  color: #AAAAAA;
+}
+.btn-wishlist svg {
+  font-size: 24px;
+  color: #D02828;
+  vertical-align: middle;
+}
+.btn-wishlist:hover {
+  color: #D02828;
+}
+
 .hni-product__nav {
   margin-bottom: 35px;
   display: flex;
@@ -1328,10 +1389,22 @@ a {
   padding: 90px 0;
 }
 
+.hni-pd__right {
+  position: relative;
+}
+.hni-pd__right .btn-wishlist {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.hni-pd__right .btn-wishlist:hover svg {
+  color: #ff0000;
+}
 .hni-pd__right h2 {
   font-weight: 700;
   font-size: 36px;
   margin-bottom: 20px;
+  padding-right: 35px;
 }
 .hni-pd__right h5 {
   font-size: 16px;
@@ -1377,6 +1450,10 @@ a {
   padding: 20px;
   display: flex;
   margin: 20px 0;
+}
+.hni-product__card .hni-pc__item .btn-wishlist {
+  margin-right: 20px;
+  display: inline-block;
 }
 .hni-product__card .hni-pc__item .img-left {
   width: 100px;
@@ -1442,6 +1519,12 @@ a {
     display: table;
     margin: 0 auto;
     margin-top: 15px;
+  }
+  .hni-product__card .hni-pc__item .btn-wishlist {
+    margin-right: 0;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
   }
 }
 /*---End:: Main Content - Product---*/
