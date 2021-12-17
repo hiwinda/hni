@@ -255,32 +255,6 @@
         align-items: center;
         justify-content: flex-end
     }
-    .hni-header__search {
-        .input-group {
-            border: 1px solid #DEDEDE;
-            align-items: center;
-            @include border-radius(25px);
-            max-width: 100%;
-            width: 400px;
-            .form-control {
-                color: $black500;
-                border: none;
-                padding: 10px 10px 10px 20px;
-                height: 50px;
-                border-top-left-radius: 25px;
-                border-bottom-left-radius: 25px;
-                &:focus-within,
-                &:focus {
-                    outline: none;
-                    box-shadow: none;
-                }
-            }
-            .btn {
-                color: $green700;
-                font-size: 20px;
-            }
-        }
-    }
     .hni-header__button {
         @include border-radius(20px);
         border: 1px solid $green700;
@@ -358,6 +332,37 @@
         }
     }
 }
+.hni-header__search,
+.hni-modal-search {
+    .input-group {
+        border: 1px solid #DEDEDE;
+        align-items: center;
+        @include border-radius(25px);
+        max-width: 100%;
+        width: 400px;
+        .form-control {
+            color: $black500;
+            border: none;
+            padding: 10px 10px 10px 20px;
+            height: 50px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            &:focus-within,
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .btn {
+            color: $green700;
+            font-size: 20px;
+        }
+    }
+}
+// search mobile
+.btn-search__mbl {
+    display: none;
+}
 @media (max-width: 1199px) {
     .hni-header {
         .hni-header__search {
@@ -392,6 +397,41 @@
             .hni-header__button,
             .hni-header__login {
                 display: none;
+            }
+        }
+    }
+    /* search mobile */
+    .hni-header__search {
+        .btn-search__mbl {
+            display: table;
+            margin-left: auto;
+            color: $green700;
+            padding: 5px;
+            svg {
+                font-size: 20px;
+            }
+        }
+        form {
+            display: none;
+        }
+    }
+}
+/* search modal */
+.hni-modal-search {
+    .modal-content {
+        background-color: transparent;
+        border: none;
+        .modal-body {
+            padding: 0;
+            .input-group {
+                background-color: $white;
+                width: 100%;
+                @include border-radius(45px);
+                .form-control {
+                    @include border-radius(45px);
+                    height: auto;
+                    padding: 20px 20px 20px 30px;
+                }
             }
         }
     }

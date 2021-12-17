@@ -23,6 +23,24 @@
 </head>
 
 <body>
+    <!-- modal search mobile -->
+    <div class="modal hni-modal-search fade" id="modalSearch" tabindex="-1" aria-labelledby="modalSearchLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari produk disini" />
+                            <div class="input-group-append">
+                                <button class="btn"><span class="fas fa-search"></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
         <div class="container">
@@ -38,14 +56,14 @@
                     </button>
                     <div class="nav-button__mbl">
                         <div class="hni-nav__button">
-                            <a href="#" class="hb-wishlist">
+                            <a href="wishlist.html" class="hb-wishlist">
                                 <span class="fas fa-heart"></span>
                             </a>
-                            <a href="#" class="hb-cart">
+                            <a href="cart.html" class="hb-cart">
                                 <span class="fas fa-shopping-cart"></span>
                             </a>
                         </div>
-                        <a href="#" class="hb-login">
+                        <a href="signin.html" class="hb-login">
                             <span class="fas fa-user"></span>
                         </a>
                     </div>
@@ -98,6 +116,8 @@
                     <div class="col-6 col-md-10 col-lg-8">
                         <div class="hni-header__hb">
                             <div class="hni-header__search">
+                                <button type="button" class="btn btn-search__mbl" data-bs-toggle="modal"
+                                    data-bs-target="#modalSearch"><span class="fas fa-search"></span></button>
                                 <form>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Cari produk disini" />
@@ -108,16 +128,16 @@
                                 </form>
                             </div>
                             <div class="hni-header__button">
-                                <a href="#" class="hb-wishlist">
+                                <a href="wishlist.html" class="hb-wishlist">
                                     <span class="fas fa-heart"></span>
                                 </a>
-                                <a href="#" class="hb-cart">
+                                <a href="cart.html" class="hb-cart">
                                     <span class="fas fa-shopping-cart"></span>
                                     <span class="hb-cart__count">2</span>
                                 </a>
                             </div>
                             <div class="hni-header__login">
-                                <a href="#" class="hb-login">
+                                <a href="signin.html" class="hb-login">
                                     <span class="hb-user">
                                         <span class="fas fa-user"></span>
                                     </span>
@@ -171,6 +191,9 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="hni-pd__right">
+                                <a href="#" class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </a>
                                 <h2>Andrographis Centella</h2>
                                 <div>
                                     <h5>KEGUNAAN</h5>
@@ -184,7 +207,7 @@
                                     <h5>HARGA</h5>
                                     <h3>Rp <span class="text-green700">85.000</span> (65/25)</h3>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-pill">Add to Chart</a>
+                                <a href="cart.html" class="btn btn-primary btn-pill">Add to Chart</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +237,7 @@
                                         <span class="price-disc">Rp 85.000</span>
                                         <span>Rp 65.000</span>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-pill">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +254,7 @@
                                     <div class="price">
                                         <span>Rp 85.000</span>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-pill">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +270,7 @@
                                     <div class="price">
                                         <span>Rp 85.000</span>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-pill">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +286,7 @@
                                     <div class="price">
                                         <span>Rp 85.000</span>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-pill">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +306,7 @@
                                         <span class="price-disc">Rp 85.000</span>
                                         <span>Rp 65.000</span>
                                     </div>
-                                    <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-pill">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
