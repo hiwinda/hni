@@ -2268,6 +2268,7 @@ a {
 /*---Start:: Account Sidebar---*/
 .hni-dashboard__content {
   width: 100%;
+  min-height: 598px;
   padding: 30px 50px;
   border: 1px solid #dedede;
   border-radius: 8px;
