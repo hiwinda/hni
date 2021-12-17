@@ -20,13 +20,33 @@
 </head>
 
 <body>
+    <!-- modal search mobile -->
+    <div class="modal hni-modal-search fade" id="modalSearch" tabindex="-1" aria-labelledby="modalSearchLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Cari produk disini" />
+                            <div class="input-group-append">
+                                <button class="btn"><span class="fas fa-search"></span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- top header - navbar -->
     <div class="hni-top__navbar">
         <div class="container">
             <div class="navbar-expand-lg navbar">
                 <div class="hni-notes">
-                    <span class="fas fa-caret-right"></span>
-                    Free shipping for all order with min Rp 100.000 transaction
+                    <div class="text-marquee">
+                        <span class="fas fa-caret-right"></span>
+                        Free shipping for all order with min Rp 100.000 transaction
+                    </div>
                 </div>
                 <div class="hni-navbar__mbl">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -35,14 +55,14 @@
                     </button>
                     <div class="nav-button__mbl">
                         <div class="hni-nav__button">
-                            <a href="#" class="hb-wishlist">
+                            <a href="wishlist.html" class="hb-wishlist">
                                 <span class="fas fa-heart"></span>
                             </a>
-                            <a href="#" class="hb-cart">
+                            <a href="cart.html" class="hb-cart">
                                 <span class="fas fa-shopping-cart"></span>
                             </a>
                         </div>
-                        <a href="#" class="hb-login">
+                        <a href="signin.html" class="hb-login">
                             <span class="fas fa-user"></span>
                         </a>
                     </div>
@@ -95,6 +115,8 @@
                     <div class="col-6 col-md-10 col-lg-8">
                         <div class="hni-header__hb">
                             <div class="hni-header__search">
+                                <button type="button" class="btn btn-search__mbl" data-bs-toggle="modal"
+                                    data-bs-target="#modalSearch"><span class="fas fa-search"></span></button>
                                 <form>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Cari produk disini" />
@@ -105,16 +127,16 @@
                                 </form>
                             </div>
                             <div class="hni-header__button">
-                                <a href="#" class="hb-wishlist">
+                                <a href="wishlist.html" class="hb-wishlist">
                                     <span class="fas fa-heart"></span>
                                 </a>
-                                <a href="#" class="hb-cart">
+                                <a href="cart.html" class="hb-cart">
                                     <span class="fas fa-shopping-cart"></span>
                                     <span class="hb-cart__count">2</span>
                                 </a>
                             </div>
                             <div class="hni-header__login">
-                                <a href="#" class="hb-login">
+                                <a href="signin.html" class="hb-login">
                                     <span class="hb-user">
                                         <span class="fas fa-user"></span>
                                     </span>

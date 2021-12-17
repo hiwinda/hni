@@ -1,0 +1,155 @@
+/*---Start:: Cart---*/ 
+.hni-table__cart {
+    margin-bottom: 0;
+    tr {
+        th {
+            background-color: $green300;
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 16px;
+            color: $black800;
+            vertical-align: middle;
+            border: none;
+            &:last-child {
+                padding-right: 40px;
+            } 
+            &:first-child {
+                width: 122px;
+            }
+        }
+        td {
+            padding: 20px 1rem;
+            vertical-align: middle;
+            font-size: 16px;
+            color: $black700;
+            border-bottom: 1px solid #dedede;
+            a:hover {
+                color: $green700;
+            }
+            &:last-child {
+                padding-right: 40px;
+            }
+            .product-img {
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+            }
+            svg {
+                font-size: 18px;
+                color: $green700;
+                vertical-align: middle;
+            }
+            .cart-add-remove {
+                border: 1px solid #dedede;
+                display: flex;
+                align-items: center;
+                @include border-radius(6px);
+                width: 150px;
+                a {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .input-cart {
+                    flex: 1%;
+                    height: 40px;
+                    input {
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        border-left: 1px solid #dedede;
+                        border-right: 1px solid #dedede;
+                        @include border-radius(0);
+                        text-align: center;
+                        font-size: 16px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-table__cart {
+        tr {
+            th:last-child,
+            td:last-child {
+                padding-right: 1rem;
+            }
+            th {
+                min-width: 125px;
+            }
+        }
+    }
+}
+// shipping
+.hni-cart__shipping {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    label {
+        display: block;
+        font-size: 16px;
+        color: $black700;
+        margin-bottom: 10px;
+    }
+    .form-select {
+        padding: 12px 20px;
+    }
+    .hni-cs__cost {
+        padding-right: 40px;
+        font-size: 16px;
+        color: $black700;
+    }
+    .hni-cs__destination {
+        .form-select {
+            max-width: 200px;
+        }
+        .btn {
+            font-size: 14px;
+            padding: 8px 10px;
+            @include border-radius(6px);
+            margin-left: 10px;
+            svg {
+                font-size: 13px;
+                color: $green700;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+// card - total payment 
+.hni-cart__payment {
+    background-color: #F4F4F4;
+    border-top: 1px solid #dedede;
+    margin-bottom: 40px;
+    padding: 20px 40px 20px 0;
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    color: $black700;
+}
+@media (max-width: 991px) {
+    .hni-cart__shipping .hni-cs__destination {
+        .form-select {
+            max-width: 100%;
+        }
+        .btn {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .hni-cart__shipping {
+        .hni-cs__expedition {
+            margin-bottom: 20px;
+        }
+    }
+    .hni-cart__shipping .hni-cs__cost,
+    .hni-cart__payment {
+        padding-right: 20px;
+    }
+}
+/*---End:: Cart---*/ 

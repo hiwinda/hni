@@ -154,14 +154,14 @@
         <section class="hni-header__section">
             <div class="container">
                 <div class="hni-space-content">
-                    <h1>Product</h1>
+                    <h1>Shopping Cart</h1>
                     <ul class="list-breadcrumb list-unstyled clearfix">
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>-</li>
                         <li>
-                            <a href="#">Product</a>
+                            <a href="#">Shopping Cart</a>
                         </li>
                     </ul>
                 </div>
@@ -171,218 +171,120 @@
             <!-- product -->
             <section class="hni-space-content">
                 <div class="hni-content">
-                    <div class="hni-shorting">
+                    <div class="hni-cart table-responsive">
+                        <table class="hni-table__cart table">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="text-start">Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th class="text-end">Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
+                                    </div>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
+                                    </div>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/img-product10.png" alt="img" class="product-img">
+                                </td>
+                                <td>
+                                    <a href="#">Andrographis Centella</a>
+                                </td>
+                                <td>
+                                    <span>Rp 85.000</span>
+                                </td>
+                                <td>
+                                    <div class="cart-add-remove">
+                                        <a href="#"><span class="fas fa-plus"></span></a>
+                                        <div class="input-cart"><input type="text" value="2" /></div>
+                                        <a href="#"><span class="fas fa-minus"></span></a>
+                                    </div>
+                                </td>
+                                <td class="text-end">Rp 170.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- shipping -->
+                    <div class="hni-cart__shipping">
                         <div class="row align-items-center">
-                            <div class="col-9">
-                                <div class="hni-shorting__select">
-                                    <label for="shorting-product">Sort By:</label>
-                                    <select class="form-select" id="shorting-product" aria-label="Short By">
-                                        <option selected>Relevance</option>
-                                        <option value="1">Discount</option>
-                                        <option value="2">Popular</option>
-                                        <option value="3">New Product</option>
+                            <div class="col-md-4">
+                                <div class="hni-cs__expedition">
+                                    <label for="expedition">Pilih Jasa Pengiriman</label>
+                                    <select class="form-select" id="expedition" aria-label="Short By">
+                                        <option selected>Gojek (Same Day)</option>
+                                        <option value="1">JnT</option>
+                                        <option value="2">Sicepat</option>
+                                        <option value="3">JNE</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="hni-shorting__ic">
-                                    <a href="#" class="active"><span class="fas fa-th-large"></span></a>
-                                    <a href="#"><span class="fas fa-th-list"></span></a>
+                            <div class="col-md-5">
+                                <div class="hni-cs__destination">
+                                    <label for="destination">Tujuan Pengiriman</label>
+                                    <div class="d-lg-flex align-items-lg-center">
+                                        <select class="form-select" id="destination" aria-label="Short By">
+                                            <option selected>Rumah Ibu</option>
+                                            <option value="1">Rumah</option>
+                                            <option value="2">Kantor</option>
+                                        </select>
+                                        <a href="#" class="btn btn-outline-secondary">
+                                            <span class="fas fa-plus"></span>
+                                            Tambah Alamat Baru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="hni-cs__cost">
+                                    <span class="d-block">&nbsp;</span>
+                                    <span class="d-block text-end">Rp 30.000</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="hni-product__wrapper">
-                        <div class="hni-product__row clearfix">
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product1.png" alt="img"></a>
-                                        <div class="product-band">
-                                            New
-                                        </div>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Health Food</a>
-                                        <h5><a href="#">Etta Goat Milk</a></h5>
-                                        <div class="price">
-                                            <span class="price-disc">Rp 85.000</span>
-                                            <span>Rp 65.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product2.png" alt="img"><a
-                                                href="#"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Magafit</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product3.png" alt="img"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Centella Teh Sinergi</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product4.png" alt="img"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Cosmetic</a>
-                                        <h5><a href="#">Night Cream</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product1.png" alt="img"></a>
-                                        <div class="product-band">
-                                            New
-                                        </div>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Health Food</a>
-                                        <h5><a href="#">Etta Goat Milk</a></h5>
-                                        <div class="price">
-                                            <span class="price-disc">Rp 85.000</span>
-                                            <span>Rp 65.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product2.png" alt="img"><a
-                                                href="#"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Magafit</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product1.png" alt="img"></a>
-                                        <div class="product-band">
-                                            New
-                                        </div>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Health Food</a>
-                                        <h5><a href="#">Etta Goat Milk</a></h5>
-                                        <div class="price">
-                                            <span class="price-disc">Rp 85.000</span>
-                                            <span>Rp 65.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product2.png" alt="img"><a
-                                                href="#"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Magafit</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product2.png" alt="img"><a
-                                                href="#"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Magafit</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hni-product__col">
-                                <div class="hni-product__item">
-                                    <div class="product-img">
-                                        <a href="#"><img src="assets/img/img-product2.png" alt="img"><a
-                                                href="#"></a>
-                                    </div>
-                                    <img src="assets/img/product-line.png" alt="line" class="product-line">
-                                    <div class="product-desc">
-                                        <a href="#" class="hni-breadcrumb">Herbs</a>
-                                        <h5><a href="#">Magafit</a></h5>
-                                        <div class="price">
-                                            <span>Rp 85.000</span>
-                                        </div>
-                                        <a href="#" class="btn btn-outline-primary btn-pill">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Total Payment -->
+                    <div class="hni-cart__payment">
+                        <div class="row">
+                            <div class="col-6 col-md-9">Total: </div>
+                            <div class="col-6 col-md-3">Rp 450.000</div>
                         </div>
                     </div>
-                    <div class="hni-pagination">
-                        <ul class="list-unstyled clearfix">
-                            <li><a href="#">PREV</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">NEXT</a></li>
-                        </ul>
-                    </div>
+                    <a href="payment.html" class="btn btn-pill btn-primary btn-large d-table mx-auto">LANJUT KE PEMBAYARAN</a>
                 </div>
             </section>
         </div>

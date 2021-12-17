@@ -45,6 +45,19 @@ a {
         color: $green700;
     }
 }
+.form-select {
+    font-family: $nunito;
+    color: $black700;
+    padding: 7px 15px;
+    font-size: 16px;
+    border-color: #dedede;
+    @include border-radius(6px);
+    background-image: url(../img/select_dropdown.png);
+    background-size: 10px;
+    &:focus {
+        border-color: #AAAAAA;
+    }
+}
 .hni-shorting {
     &__select {
         display: flex;
@@ -56,14 +69,8 @@ a {
             color: $black700;
         }
         .form-select {
-            font-family: $nunito;
-            color: $black700;
             width: 200px;
             max-width: 100%;
-            padding: 7px 15px;
-            font-size: 16px;
-            border-color: #dedede;
-            @include border-radius(6px);
             margin-left: 10px;
         }
     }
@@ -106,8 +113,11 @@ a {
 @import 'mainHeader';
 @import 'mainCategory';
 @import 'product';
+@import 'sliderProduct';
 @import 'homepageDiscount';
 @import 'payment';
+@import 'cart';
+@import 'login';
 @import 'accountSidebar';
 @import 'accountDashboardCt';
 
