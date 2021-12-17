@@ -261,6 +261,24 @@
         margin-top: 10px;
     }
 }
+@media (max-width: 991px) {
+    .hni-product__detail {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 767px) {
+    .hni-pd__right {
+        h2 {
+            font-size: 32px;
+        }
+        h5,p {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+}
 /*---SIMILAR PRODUCT---*/ 
 .hni-similar-product {
     background-color: #F4F4F4;
