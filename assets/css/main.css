@@ -81,6 +81,7 @@ a {
 @media (max-width: 991px) {
   .btn.btn-large {
     padding: 10px 25px;
+    font-size: 15px;
   }
 }
 /*---End:: Custom Button---*/
@@ -515,6 +516,29 @@ a {
   padding: 20px 20px 20px 30px;
 }
 
+@keyframes marquee {
+  0% {
+    margin-left: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 767px) {
+  .hni-notes {
+    overflow: hidden;
+  }
+  .hni-notes .text-marquee {
+    animation: marquee 7s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .hni-notes .text-marquee:hover {
+    animation-play-state: paused;
+  }
+}
 /*---End:: Navbar---*/
 /*---Start:: Footer---*/
 .hni-footer .hni-footer__newsletter h1 {
@@ -1430,6 +1454,22 @@ a {
   margin-top: 10px;
 }
 
+@media (max-width: 991px) {
+  .hni-product__detail {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .hni-pd__right h2 {
+    font-size: 32px;
+  }
+  .hni-pd__right h5, .hni-pd__right p {
+    font-size: 14px;
+  }
+  .hni-pd__right h3 {
+    font-size: 20px;
+  }
+}
 /*---SIMILAR PRODUCT---*/
 .hni-similar-product {
   background-color: #F4F4F4;
@@ -1528,6 +1568,64 @@ a {
   }
 }
 /*---End:: Main Content - Product---*/
+#main-img.owl-theme {
+  position: relative;
+}
+#main-img .item {
+  margin: 5px;
+  text-align: center;
+}
+#main-img .item .img-content {
+  border: 1px solid #dedede;
+  color: #000;
+  width: 100%;
+}
+#main-img .item .img-content img {
+  width: 100%;
+}
+
+#thumb-img .current .item {
+  border-color: #5E982A;
+  opacity: 1;
+}
+#thumb-img .item {
+  margin: 5px 0;
+  border: 1px solid #dedede;
+  opacity: 0.7;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #thumb-img {
+    width: 89px;
+    margin: 0 auto;
+  }
+  #thumb-img .owl-item {
+    float: none;
+    width: 89px !important;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  #thumb-img {
+    width: 70px;
+  }
+  #thumb-img .owl-item {
+    width: 70px !important;
+  }
+}
+@media (max-width: 991px) {
+  .hni-pd__img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #thumb-img .item {
+    margin: 5px auto;
+    width: 90%;
+  }
+}
 /*---Start:: Main Content - Discount Homepage---*/
 .hni-banner__main {
   position: relative;
