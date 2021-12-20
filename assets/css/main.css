@@ -90,7 +90,7 @@ a {
   background-color: #5E982A;
   position: relative;
   color: #ffffff;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 .hni-top__navbar .navbar {
   padding: 0;
@@ -105,6 +105,9 @@ a {
   margin-right: 5px;
   font-size: 18px;
 }
+.hni-top__navbar .hni-navbar__list li {
+  padding: 9px;
+}
 .hni-top__navbar .hni-navbar__list li .navbar-toggler {
   display: none;
 }
@@ -118,14 +121,19 @@ a {
   font-size: 16px;
   margin-left: 5px;
 }
+.hni-top__navbar .hni-navbar__list li.dropdown .dropdown-toggle a:hover {
+  border-bottom: 1px solid transparent;
+}
 .hni-top__navbar .hni-navbar__list li a {
   display: block;
   color: #ffffff;
   font-weight: 700;
-  padding: 1rem 20px;
+  padding: 6px 12px;
+  border-bottom: 1px solid transparent;
 }
+.hni-top__navbar .hni-navbar__list li.active a,
 .hni-top__navbar .hni-navbar__list li a:hover {
-  color: #333333;
+  border-bottom: 1px solid #ffffff;
 }
 .hni-top__navbar .hni-navbar__list li .dropdown-menu {
   background-color: transparent;
@@ -317,7 +325,7 @@ a {
   -ms-border-radius: 8px;
   -border-radius: 8px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 20px 24px;
+  padding: 15px 20px;
 }
 .hni-header .hni-logo .hni-logo__dsk {
   display: block;
@@ -943,7 +951,7 @@ a {
   padding: 90px 0 60px 0;
 }
 .hni-top__main h1 {
-  font-size: 72px;
+  font-size: 55px;
   font-weight: 900;
   line-height: 1em;
   margin-bottom: 0;
@@ -957,10 +965,12 @@ a {
   margin: 30px 0;
 }
 .hni-top__main .hni-header__img {
-  max-width: 100%;
+  max-width: 80%;
+  display: table;
+  margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .hni-space-content {
     padding: 0 60px;
   }
@@ -968,10 +978,16 @@ a {
   .hni-top__main {
     padding: 90px 0 100px 0;
   }
-}
-@media (max-width: 991px) and (min-width: 768px) {
+  .hni-top__main .hni-header__img {
+    max-width: 90%;
+  }
   .hni-top__main h1 {
-    font-size: 50px;
+    font-size: 72px;
+  }
+}
+@media (max-width: 991px) {
+  .hni-top__main .hni-header__img {
+    max-width: 90%;
   }
 }
 @media (max-width: 767px) {
@@ -979,14 +995,15 @@ a {
     padding: 0;
   }
 
+  .hni-top__main h1 {
+    font-size: 45px;
+  }
   .hni-top__main p {
     font-size: 14px;
     margin: 10px 0;
   }
   .hni-top__main .hni-header__img {
-    max-width: 90%;
-    display: table;
-    margin: 0 auto;
+    max-width: 70%;
     margin-bottom: 20px;
   }
 }
@@ -1032,8 +1049,11 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .hni-top__main,
-.hni-header__section {
+  .hni-top__main {
+    padding: 70px 0 60px 0;
+  }
+
+  .hni-header__section {
     padding: 50px 0;
   }
 }
@@ -1126,7 +1146,7 @@ a {
   color: #333333;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1281px) {
   .hni-category {
     padding: 90px 60px 0 60px;
     margin-top: -90px;
@@ -1309,17 +1329,18 @@ a {
 }
 .hni-product__item .product-img .product-band {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 6px;
+  left: 6px;
   background-color: #FFAE10;
   color: #3C0000;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
+  line-height: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   -border-radius: 50%;
@@ -1877,6 +1898,12 @@ a {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1280px) {
+  .hni-payment__confirmation {
+    width: 550px;
+    margin: 60px auto;
+  }
+}
 @media (max-width: 991px) {
   .hni-payment .hni-title h5 {
     padding-bottom: 15px;
@@ -2082,10 +2109,14 @@ a {
 /*---End:: Cart---*/
 /*---Start:: Login---*/
 .hni-login {
-  padding: 150px 0 90px 0;
+  padding: 60px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hni-login .hni-login__content {
-  max-width: 890px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: #ffffff;
   border: 1px solid #DEDEDE;
@@ -2109,6 +2140,7 @@ a {
 }
 .hni-login__right {
   padding: 40px 50px;
+  flex: 1%;
 }
 .hni-login__right h1 {
   font-size: 36px;
@@ -2152,15 +2184,21 @@ a {
   color: #49781f;
 }
 
-@media (max-width: 767px) {
-  .hni-login {
-    padding: 80px 0 40px 0;
+@media (max-width: 1280px) {
+  .hni-login .hni-login__content {
+    max-width: 700px;
   }
+  .hni-login .hni-login__content .hni-login__right {
+    padding: 40px;
+  }
+}
+@media (max-width: 767px) {
   .hni-login__left {
     display: none;
   }
   .hni-login__right {
     padding: 30px;
+    flex: unset;
   }
   .hni-login__right h1 {
     font-size: 24px;

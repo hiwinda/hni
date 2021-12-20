@@ -102,17 +102,18 @@
         }
         .product-band {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 6px;
+            left: 6px;
             background-color: $orange500;
             color: #3C0000;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 10px;
+            line-height: 1em;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 48px;
+            width: 32px;
+            height: 32px;
             @include border-radius(50%);
             text-transform: uppercase;
         }

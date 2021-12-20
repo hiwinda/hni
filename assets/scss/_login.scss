@@ -1,8 +1,12 @@
 /*---Start:: Login---*/ 
 .hni-login {
-    padding: 150px 0 90px 0;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .hni-login__content {
-        max-width: 890px;
+        max-width: 800px;
         margin: 0 auto;
         background-color: $white;
         border: 1px solid #DEDEDE;
@@ -23,7 +27,8 @@
         }
     }
     &__right {
-        padding: 40px 50px;       
+        padding: 40px 50px;      
+        flex: 1%; 
         h1 {
             font-size: 36px;
             font-weight: 700;
@@ -65,14 +70,22 @@
         }
     }
 }
+@media (max-width: 1280px) {
+    .hni-login .hni-login__content {
+        max-width: 700px;
+        .hni-login__right {
+            padding: 40px;
+        }
+    }
+}
 @media (max-width: 767px) {
     .hni-login {
-        padding: 80px 0 40px 0;
         &__left {
             display: none;
         }
         &__right {
             padding: 30px;
+            flex: unset;
             h1 {
                 font-size: 24px;
             }
